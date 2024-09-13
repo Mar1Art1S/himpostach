@@ -25,7 +25,7 @@
                  class="relative z-50 w-auto h-auto">
                 <button @click="modalOpen=true"
                         class="inline-block w-40 px-12 py-3 m-2 text-sm text-white bg-blue-800 border border-white rounded font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75">
-                    {{ __('TDS') }}</button>
+                    {{ __('Відео') }}</button>
                 <template x-teleport="body">
                     <div x-show="modalOpen"
                          class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
