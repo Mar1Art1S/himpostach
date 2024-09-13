@@ -44,56 +44,56 @@ name('ppy_serovine');
                 description="{{ __('Сировина для пінополіуретана складається з двох компонентів – поліолу та ізоцианату. Ми виробляємо сировину для жорстких пін') }}"
                 image="{{ Vite::asset('resources/img/6_PPU_grup/001.jpeg') }}"
                 link="{{ route('prod_ppu_napilennya')}}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title="{{ __('ППУ для шкарлупи') }}"
                 description="{{ __('Застосовується у виробництві теплоізоляційних напівциліндрів (шкарлуп), призначених для теплоізоляції трубопровідних систем теплопостачання та ') }}"
                 image="{{ Vite::asset('resources/img/6_PPU_grup/002.jpeg') }}"
                 link="{{ route('prod_ppu_shkarlupi')}}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title="{{ __('ППУ попередньо-ізольованих труб') }}"
                 description="{{ __('Попередньо ізольовані пінополіуретаном труби є дуже ефективної та сучасної технологією енергозбереження') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/003.jpeg') }}"
                 link="{{ route('prod_ppu_trub')}}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title="{{ __('ППУ для заливки Сендвіч-панелей') }}"
                 description="{{ __('ППУ широко використовується для виробництва сендвіч-панелей і торговельного холодильного обладнання') }}"
                 image="{{ Vite::asset('resources/img/6_PPU_grup/004.jpeg') }}"
                 link="{{ route('prod_ppu_sendvich')}}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('ППУ для декору та негабаритних виробів') }} "
                 description=" {{ __('Пінополіуретан (ППУ) може бути використаний для декору та виробів негабаритних розмірів, таких як вулики тощо. ППУ може бути легко формованим') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/005.jpeg') }}"
                 link="{{ route('prod_ppu_virobiv') }}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('ППУ для зміцнення вугільного масиву, зміцнення фундаментів') }} "
                 description=" {{ __('Застосування пінополіуретану (ППУ) для зміцнення вугільного масиву або фундаментів може бути використано в окремих випадках як альтернативний метод') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/006.jpeg') }}"
                 link="{{ route('prod_ppu_masivu') }}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('ППУ для заливання міжстінного простору') }} "
                 description=" {{ __('Використання пінополіуретану (ППУ) для заливання міжстінного простору є поширеною практикою в будівництві') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/007.jpeg') }}"
                 link="{{ route('prod_ppu_prostoru') }}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('ППУ для повітряних фільтрів') }} "
                 description=" {{ __('Пінополіуретан (ППУ) використовується для виготовлення повітряних фільтрів завдяки своїм властивостям, таким як висока пористість, міцність і') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/008.jpeg') }}"
                 link="{{ route('prod_ppu_filtriv') }}"
-                link_two="{{ 'https://www.youtube.com/@user-me9lc4ho6b' }}"
+                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
         </x-decor.card>
     </x-section>
