@@ -1,0 +1,78 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        "./resources/views/**/*.blade.php",
+        "./resources/css/**/*.css",
+        "./resources/js/**/*.js",
+    ],
+    theme: {
+        screens: {
+            lg: { max: "1999.99px" },
+            lf: { max: "1659.99px" },
+            rg: { max: "1499.99px" },
+            tg: { max: "1299.99px" },
+            fg: { max: "1099.99px" },
+            md: { max: "999.99px" },
+            mf: { max: "891.99px" },
+            sm: { max: "768.99px" },
+            sf: { max: "668.99px" },
+            xs: { max: "479.99px" },
+        },
+        container: {
+            center: true,
+            padding: "0",
+        },
+        fontFamily: {
+            r100: ["Roboto100", "sans-serif"],
+            r300: ["Roboto300", "sans-serif"],
+            r400: ["Roboto400", "sans-serif"],
+            r500: ["Roboto500", "sans-serif"],
+            r700: ["Roboto700", "sans-serif"],
+            r900: ["Roboto900", "sans-serif"],
+        },
+        extend: {
+            fontSize: {
+                xf: "0.42rem",
+                xs: "0.82rem",
+                sm: "0.98rem",
+                base: "1.15rem",
+                lg: "1.22rem",
+                xl: "1.36rem",
+                "1.5xl": "1.5rem",
+                "2xl": "1.725rem",
+                "3xl": "2.155rem",
+                "4xl": "2.58rem",
+                "5xl": "3.45rem",
+                "6xl": "4.3rem",
+                "7xl": "5.17rem",
+                "8xl": "6.9rem",
+                "9xl": "9.2rem",
+            },
+
+            backgroundImage: {
+                "icon-telegram":
+                    "url('/public/img/1_social__icon/telegram.svg')",
+                "icon-viber": "url('/public/img/1_social__icon/viber.svg')",
+                "icon-call": "url('/public/img/1_social__icon/call.svg')",
+                "icon-cart": "url('/public/img/1_social__icon/cart.svg')",
+                "icon-profile": "url('/public/img/1_social__icon/profile.svg')",
+                "icon-close": "url('/public/img/1_social__icon/close.svg')",
+                "icon-us-1": "url('/public/img/4_icon/1.svg')",
+                "icon-us-2": "url('/public/img/4_icon/2.svg')",
+                "icon-us-3": "url('/public/img/4_icon/3.svg')",
+                "icon-us-4": "url('/public/img/4_icon/4.svg')",
+                "icon-us-5": "url('/public/img/4_icon/5.svg')",
+                "icon-us-6": "url('/public/img/4_icon/6.svg')",
+            },
+            // fontWeight: {
+            //     hairline: "100",
+            //     light: "300",
+            //     normal: "400",
+            //     medium: "500",
+            //     bold: "700",
+            //     blast: "900",
+            // },
+        },
+    },
+    plugins: [],
+};

@@ -1,0 +1,11 @@
+composer global require laravel/installer
+composer create-project --prefer-dist laravel/laravel=11.* myproject
+laravel new home\test.laravel
+
+і перезавантажити
+
+потім
+osp project test.laravel
+composer update
+yarn install
+yarn dev
