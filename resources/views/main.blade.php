@@ -68,9 +68,12 @@
 <x-section>
 
     <x-decor.card>
-        <x-category title=" {{ __('СИРОВИНА ДЛЯ ПІНОПОЛІУРЕТАНА') }}"
-            description="{{ __('Сировина для пінополіуретана складається з двох компонентів – поліолу та ізоцианату. Ми виробляємо сировину для жорстких пін.') }}"
-            image="{{ Vite::asset('resources/img/categories/001.jpg') }}" link="{{ route('ppy_serovine')}}" />
+        <x-category
+                title=" {{ __('СИРОВИНА ДЛЯ ПІНОПОЛІУРЕТАНА') }}"
+                description="{{ __('Сировина для пінополіуретана складається з двох компонентів – поліолу та ізоцианату. Ми виробляємо сировину для жорстких пін.') }}"
+                image="{{ Vite::asset('resources/img/categories/001.jpg') }}"
+                link="{{ route('ppy_serovine')}}"
+        />
         <x-category title="{{ __('СИРОВИНА ДЛЯ ПОЛІУРЕТАНУ') }}"
             description="{{ __('Сировина для поліуретану, яка включає поліолі та ізоціанати, широко використовується у виробництві поліуретанових...') }}"
             image="{{ Vite::asset('resources/img/categories/002.jpg') }}" link="{{ route('py_serovine')}}" />

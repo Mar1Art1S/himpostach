@@ -7,7 +7,7 @@
         font-family: "Roboto100";
         font-display: swap;
         src: url("/resources/fonts/Roboto-Thin.woff2") format("woff2"),
-            url("/resources/fonts/Roboto-Thin.woff") format("woff");
+        url("/resources/fonts/Roboto-Thin.woff") format("woff");
         font-weight: 100;
         font-style: normal;
     }
@@ -15,7 +15,7 @@
         font-family: "Roboto300";
         font-display: swap;
         src: url("/resources/fonts/Roboto-Light.woff2") format("woff2"),
-            url("/resources/fonts/Roboto-Light.woff") format("woff");
+        url("/resources/fonts/Roboto-Light.woff") format("woff");
         font-weight: 300;
         font-style: normal;
     }
@@ -23,7 +23,7 @@
         font-family: "Roboto400";
         font-display: swap;
         src: url("/resources/fonts/Roboto-Regular.woff2") format("woff2"),
-            url("/resources/fonts/Roboto-Regular.woff") format("woff");
+        url("/resources/fonts/Roboto-Regular.woff") format("woff");
         font-weight: 400;
         font-style: normal;
     }
@@ -31,7 +31,7 @@
         font-family: "Roboto500";
         font-display: swap;
         src: url("/resources/fonts/Roboto-Medium.woff2") format("woff2"),
-            url("/resources/fonts/Roboto-Medium.woff") format("woff");
+        url("/resources/fonts/Roboto-Medium.woff") format("woff");
         font-weight: 500;
         font-style: normal;
     }
@@ -39,7 +39,7 @@
         font-family: "Roboto700";
         font-display: swap;
         src: url("/resources/fonts/Roboto-Bold.woff2") format("woff2"),
-            url("/resources/fonts/Roboto-Bold.woff") format("woff");
+        url("/resources/fonts/Roboto-Bold.woff") format("woff");
         font-weight: 700;
         font-style: normal;
     }
@@ -47,25 +47,11 @@
         font-family: "Roboto900";
         font-display: swap;
         src: url("/resources/fonts/Roboto-Black.woff2") format("woff2"),
-            url("/resources/fonts/Roboto-Black.woff") format("woff");
+        url("/resources/fonts/Roboto-Black.woff") format("woff");
         font-weight: 900;
         font-style: normal;
     }
 }
-
-.table {
-    @apply divide-y divide-amber-600;
-}
-
-.table-bordered {
-    @apply border-collapse border border-amber-600;
-}
-
-.table-bordered td {
-    @apply border border-amber-600 px-4 py-2;
-}
-
-
 
 .flip {
     position: relative;
@@ -77,9 +63,11 @@
         transition-duration: 0.5s;
         transition-property: transform, opacity;
     }
+
     > .front {
         transform: rotateY(0deg);
     }
+
     > .back {
         position: absolute;
         opacity: 0;
@@ -89,23 +77,28 @@
         height: 100%;
         transform: rotateY(-180deg);
     }
+
     &:hover {
         > .front {
             transform: rotateY(180deg);
         }
+
         > .back {
             opacity: 1;
             transform: rotateY(0deg);
         }
     }
+
     &.flip-vertical {
         > .back {
             transform: rotateX(-180deg);
         }
+
         &:hover {
             > .front {
                 transform: rotateX(180deg);
             }
+
             > .back {
                 transform: rotateX(0deg);
             }
@@ -117,6 +110,7 @@
     position: relative;
     display: inline-block;
     width: 400px;
+
     > .front,
     > .back {
         display: block;
@@ -126,18 +120,74 @@
         background-position: center !important;
         height: 400px;
         background: #3f3f46;
+
         p {
             color: #999;
         }
     }
+
 }
+
+
 @media screen and (max-width: 1660px) {
     .flip {
         width: 300px;
         height: 300px;
+
         > .front,
         > .back {
             height: 300px;
         }
     }
+}
+.tds_title {
+    @apply text-1.5xl font-r900 text-center font-bold;
+}
+
+.tds_product {
+    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold;
+}
+
+.tds_subtitle {
+    @apply text-xl font-r300 text-center font-bold mt-4;
+}
+
+.tds_title_bold {
+    @apply text-xl font-r300 text-left font-bold mt-4;
+}
+
+.tds_text {
+    @apply text-base font-r500 text-center font-medium;
+}
+
+.tds_text_left {
+    @apply text-base font-r500 text-left font-normal;
+}
+
+.grey-text-accent {
+    @apply text-blue-500 text-lg font-r900 font-semibold;
+}
+
+.tds_line {
+    @apply w-full h-[1px] bg-blue-500 my-6;
+}
+
+.tds_text_line {
+    @apply w-full h-[1px] bg-blue-200 my-4;
+}
+
+.tds_table {
+    @apply min-w-full border border-collapse border-gray-300 table-auto;
+}
+
+.tds_table_bg {
+    @apply bg-blue-500;
+}
+
+.tds_table_title {
+    @apply px-4 py-2 text-white font-r500 font-semibold border border-gray-300;
+}
+
+.tds_table_text {
+    @apply px-4 py-2 border border-gray-300;
 }
