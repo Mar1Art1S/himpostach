@@ -140,6 +140,7 @@
         }
     }
 }
+
 .tds_title {
     @apply text-1.5xl font-r900 text-center font-bold;
 }
@@ -149,11 +150,11 @@
 }
 
 .tds_subtitle {
-    @apply text-xl font-r300 text-center font-bold mt-4;
+    @apply text-xl font-r700 text-center font-bold mt-4;
 }
 
 .tds_title_bold {
-    @apply text-xl font-r300 text-left font-bold mt-4;
+    @apply text-xl font-r700 text-left font-bold mt-4;
 }
 
 .tds_text {
@@ -165,7 +166,7 @@
 }
 
 .grey-text-accent {
-    @apply text-blue-500 text-lg font-r900 font-semibold;
+    @apply text-blue-500 text-lg font-r700 font-semibold;
 }
 
 .tds_line {
