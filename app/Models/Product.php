@@ -26,6 +26,7 @@ class Product extends Model
             'description' => 'nullable|string|max:5000',
             'status' => ['required', Rule::enum(CategoryEnum::class)],
             'product' => 'required|string|max:255',
+            'tds_content' => 'max:65535',
         ];
     }
     public function messages(): array
@@ -37,4 +38,6 @@ class Product extends Model
             'description.max' => 'Опис не може містити більше ніж 1000 символів.',
         ];
     }
+
+
 }
