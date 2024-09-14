@@ -19,7 +19,7 @@ class MainController extends Controller
 
     public function index()
     {
-        $articles = Article::where('active', true)->latest('published_at')->paginate(4);
+        $articles = Article::where('active', true)->latest('published')->paginate(4);
         return view('article.index', compact('articles'));
         // $categories = ArticleCategory::where('active', true)->get();
         // return view('article.index', compact('categories'));
