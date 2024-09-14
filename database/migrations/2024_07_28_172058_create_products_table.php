@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('tds_file')->nullable();
             $table->string('tex_doc_file')->nullable();
             $table->string('tds_title')->nullable();
-            $table->string('tds_content')->nullable();
+            $table->longText('tds_content')->nullable();
 
             $table->timestamps();
 
