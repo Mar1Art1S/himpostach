@@ -59,19 +59,14 @@ name('prod_pu_pigment');
 </x-category-header>
 <livewire:search />
 
-<x-decor.card>
-    <x-category title=" {{ __('СИРОВИНА ДЛЯ ПІНОПОЛІУРЕТАНА') }}"
-        description="{{ __('Сировина для пінополіуретана складається з двох компонентів – поліолу та ізоцианату. Ми виробляємо сировину для жорстких пін.') }}"
-        image="{{ Vite::asset('resources/img/categories/001.jpg') }}" link="{{ route('ppy_serovine')}}" />
 
-</x-decor.card>
 
-{{-- <x-section>
+ <x-section>
     <x-decor.card>
         @foreach ($products as $product)
         <x-product :product="$product" />
         @endforeach
 
     </x-decor.card>
-</x-section> --}}
+</x-section>
 @endsection
