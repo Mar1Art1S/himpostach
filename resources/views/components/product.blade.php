@@ -55,7 +55,7 @@
                                 <div class="mr-12">
                                     <a class="" href="{{ asset('storage/' . $product->tds_file) }}">
                                         <x-button class="w-40 bg-blue-800 hover:bg-blue-900 hover:text-amber-500">{{
-                                            __('скачати') }}
+                                            __('ТDS') }}
                                         </x-button>
                                     </a>
                                 </div>
@@ -70,6 +70,11 @@
                             </div>
                             <div class="relative w-auto">
                                 <div class="">
+                                    <a class="" href="{{ asset('storage/' . $product->tex_doc_file) }}">
+                                        <x-button class="w-40 bg-blue-800 hover:bg-blue-900 hover:text-amber-500">{{
+                                            __('технічний документ') }}
+                                        </x-button>
+                                    </a>
                                     {!! $product->tds_content !!}
                                 </div>
                             </div>
