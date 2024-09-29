@@ -6,7 +6,7 @@
         <div class="w-full bg-blue-800 max-h-32 lg:col-span-1 md:max-h-32 md:w-full">
             <a href="{{ route('main') }}">
                 <img class="object-contain w-[400px] sf:w-[280px] mx-auto"
-                    src="{{ Vite::asset('resources/img/2_logo/Logo1.png') }}" alt="Logo" />
+                    src="{{ Vite::asset('resources/img/2_logo/Logo_new.png') }}" alt="Logo" />
             </a>
         </div>
         <div class="grid grid-cols-2 gap-8 fg:grid-cols-1 sf:px-4">

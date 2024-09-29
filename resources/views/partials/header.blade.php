@@ -6,7 +6,7 @@
             <div class="flex items-center flex-shrink-0">
                 <a href="{{ route('main') }}" class="block">
                     <img class="object-contain h-[130px] mf:h-[100px] sf:h-[80px] xs:h-[60px]"
-                        src="{{ Vite::asset('resources/img/2_logo/Logo1.png') }}" alt="Логотип" />
+                        src="{{ Vite::asset('resources/img/2_logo/Logo_new.png') }}" alt="Логотип" />
                 </a>
             </div>
 
