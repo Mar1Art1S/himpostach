@@ -52,10 +52,15 @@
                             class="relative w-[800px] h-[700px] py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
                             <div class="flex items-center justify-between pb-2 ">
                                 <h3 class="text-lg font-semibold"> {{ $product->tds_title }}</h3>
-                                <div class="mr-12">
+                                <div class="mr-12 ">
                                     <a class="" href="{{ asset('storage/' . $product->tds_file) }}">
                                         <x-button class="w-40 bg-blue-800 hover:bg-blue-900 hover:text-amber-500">{{
                                             __('ТDS') }}
+                                        </x-button>
+                                    </a>
+                                    <a class="" href="{{ asset('storage/' . $product->tex_doc_file) }}">
+                                        <x-button class="w-40 bg-amber-500 hover:bg-blue-900 hover:text-amber-500">{{
+                                            __('технічний документ') }}
                                         </x-button>
                                     </a>
                                 </div>
@@ -70,12 +75,7 @@
                             </div>
                             <div class="relative w-auto">
                                 <div class="">
-                                    <a class="" href="{{ asset('storage/' . $product->tex_doc_file) }}">
-                                        <x-button class="w-40 bg-blue-800 hover:bg-blue-900 hover:text-amber-500">{{
-                                            __('технічний документ') }}
-                                        </x-button>
-                                    </a>
-                                    {!! $product->tds_content !!}
+
                                 </div>
                             </div>
                         </div>
