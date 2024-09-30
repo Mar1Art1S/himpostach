@@ -39,7 +39,7 @@
 
                 <div class="flex flex-row items-center order-1 mt-5 sf:flex-col">
                     <div class="w-1/2 ml-2 text-gray-900 text-start font-r400 sf:w-full">
-                        {{ __('По всіх технологічним, логістичним питанням звертайтесь за') }}
+                        {{ __('По всім технологічним, логістичним питанням звертайтесь за') }}
                     </div>
                     <a href="tel:+380503403547" class="w-1/2 block text-1.5xl ml-4 font-r500 sf:w-full">{{ __('+38 (050)
                         340-35-47') }}</a>
