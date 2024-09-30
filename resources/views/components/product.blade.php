@@ -58,11 +58,7 @@
                                             __('ТDS') }}
                                         </x-button>
                                     </a>
-                                    <a class="" href="{{ asset('storage/' . $product->tex_doc_file) }}">
-                                        <x-button class="block w-40 bg-amber-500 hover:bg-blue-900 hover:text-amber-500">{{
-                                            __('технічний документ') }}
-                                        </x-button>
-                                    </a>
+
                                 </div>
 
                                 <button @click="modalOpen=false"
