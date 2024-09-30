@@ -53,11 +53,11 @@
                             <div class="flex items-center justify-between pb-2 ">
                                 <h3 class="text-lg font-semibold"> {{ $product->tds_title }}</h3>
                                 <div class="mr-12 ">
-                                    <a class="" href="{{ asset('storage/' . $product->tds_file) }}">
-                                        <x-button class="block w-40 bg-blue-800 hover:bg-blue-900 hover:text-amber-500">{{
-                                            __('ТDS') }}
-                                        </x-button>
-                                    </a>
+{{--                                    <a class="" href="{{ asset('storage/' . $product->tds_file) }}">--}}
+{{--                                        <x-button class="block w-40 bg-blue-800 hover:bg-blue-900 hover:text-amber-500">{{--}}
+{{--                                            __('ТDS') }}--}}
+{{--                                        </x-button>--}}
+{{--                                    </a>--}}
 
                                 </div>
 
