@@ -71,7 +71,7 @@
                             </div>
                             <div class="relative w-auto">
                                 <div class="">
-
+                                    {!! $product->tds_content !!}
                                 </div>
                             </div>
                         </div>
