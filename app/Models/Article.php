@@ -5,12 +5,25 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use RalphJSmit\Laravel\SEO\Support\HasSEO;
+use RalphJSmit\Laravel\SEO\Support\SEOData;
 
 class Article extends Model
 {
     use HasFactory;
+    use HasSEO;
 
+    public function getDynamicSEOData(): SEOData
+    {
+        $pathToFeaturedImageRelativeToPublicPath = $this->detail_image;
+
+        // Override only the properties you want:
+        return new SEOData(
+            title: $this->title,
+            description: $this->preview_text,
+            image: $pathToFeaturedImageRelativeToPublicPath,
+        );
+    }
 
     protected $fillable = [
         'title',
@@ -29,6 +42,7 @@ class Article extends Model
         'published_at' => 'datetime',
         'active' => 'boolean'
     ];
+
     public function category() {
         return $this->belongsTo(ArticleCategory::class);
     }
@@ -36,6 +50,8 @@ class Article extends Model
     public function getFormattedPublishedAtAttribute(){
         return Carbon::parse($this->published_at)->translatedFormat('j F Y');
     }
+
+
     public function rules(): array
 {
     return [

@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
+use RalphJSmit\Filament\SEO\SEO;
 
 
 
@@ -37,13 +38,21 @@ class ArticleResource extends Resource
         return $form
             ->schema([
 
+
                 Forms\Components\TextInput::make('title')->label('Назва')
                     ->required()
                     ->maxLength(255)
                     ->live(onBlur: true)
                     ->afterStateUpdated(function (Set $set, $state) {
                         $set('slug', Str::slug($state));
+                    })
+                    ->helperText(function (?string $state): string {
+                        return (string) Str::of(strlen($state))
+                            ->append(' / ')
+                            ->append(255 . ' ')
+                            ->append(Str::of(__('Назва'))->lower());
                     }),
+
                 Forms\Components\TextInput::make('slug')->label('Код')
                     ->required(),
                 Forms\Components\FileUpload::make('preview_image')->label('Детальне зображення')
@@ -60,7 +69,13 @@ class ArticleResource extends Resource
 
                 Forms\Components\Textarea::make('preview_text')->label('Анонс')
                     ->required()
-                    ->columnSpanFull(),
+                    ->columnSpanFull()
+                    ->helperText(function (?string $state): string {
+                        return (string) Str::of(strlen($state))
+                            ->append(' / ')
+                            ->append(500 . ' ')
+                            ->append(Str::of(__('SEO Опис блог'))->lower());
+                    }),
                 TinyEditor::make('detail_text')->label('Стаття')
                     ->required()
                     ->columnSpanFull(),
@@ -75,6 +90,8 @@ class ArticleResource extends Resource
                 Forms\Components\Toggle::make('active')->label('Активне')
                     ->default(true)
                     ->required(),
+                SEO::make()
+                    ->columnSpanFull(),
             ]);
     }
 
