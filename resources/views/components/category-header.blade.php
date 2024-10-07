@@ -4,7 +4,7 @@
     <div class="flex flex-row py-8 mf:flex-col mf:justify-center mf:items-center">
         <h1 {{ $title->attributes->class('pl-3 font-r900 text-gray-400 text-[54px] leading-[77px] text-left uppercase
             w-1/3
-            rg:text-[38px] rg:leading-[60px] tg:w-2/5 fg:text-4xl fg:w-1/2 mf:w-full mf:text-center sm:text-2xl
+            rg:text-[32px] rg:leading-[60px] tg:w-2/5 fg:text-4xl fg:w-1/2 mf:w-full mf:text-center sm:text-2xl
             sm:leading-9') }}>
             {{ $title }}
 
