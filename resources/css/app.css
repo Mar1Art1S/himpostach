@@ -192,3 +192,6 @@
 .tds_table_text {
     @apply px-4 py-2 border border-gray-300;
 }
+.table_w {
+    @apply max-w-[800px] overflow-x-auto;
+}
