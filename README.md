@@ -10,6 +10,12 @@ php artisan make:filament-user
 За необхідністю, для наповнення бази даних тестовими даними, виконати:  
 php artisan db:seed
 
+## Кеш
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+php artisan cache:clear
+
 ## Використання іконок
 
 Компонент іконок використовується Lucide
