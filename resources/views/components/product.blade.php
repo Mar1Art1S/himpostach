@@ -49,7 +49,7 @@
                             x-transition:leave="ease-in duration-200"
                             x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                             x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                            class="relative w-[800px] h-[700px] py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
+                            class="relative w-[900px] h-[700px] py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
                             <div class="flex items-center justify-between pb-2 ">
                                 <h3 class="text-lg font-semibold"> {{ $product->tds_title }}</h3>
                                 <div class="mr-12 ">
