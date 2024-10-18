@@ -58,14 +58,14 @@ name('ppy_serovine');
                 description="{{ __('Попередньо ізольовані пінополіуретаном труби є дуже ефективної та сучасної технологією енергозбереження') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/003.jpeg') }}"
                 link="{{ route('prod_ppu_trub')}}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ 'S2aVyZC2or8?si=y_k0-F5HJ-O6ieGU' }}"
             />
             <x-category-v
                 title="{{ __('ППУ для заливки Сендвіч-панелей') }}"
                 description="{{ __('ППУ широко використовується для виробництва сендвіч-панелей і торговельного холодильного обладнання') }}"
                 image="{{ Vite::asset('resources/img/6_PPU_grup/004.jpeg') }}"
                 link="{{ route('prod_ppu_sendvich')}}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ 'mgQP2OUBN7U?si=tKOML7f-i2cDquZt' }}"
             />
             <x-category-v
                 title=" {{ __('ППУ для декору та негабаритних виробів') }} "

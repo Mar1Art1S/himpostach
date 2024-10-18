@@ -60,7 +60,7 @@ name('py_klei');
                 description="{{ __('Поліуретанові клеї для сендвіч-панелей та клінкерних термопанелей знаходять широке') }}"
                 image="{{ Vite::asset('resources/img/mat_4/03.jpg') }}"
                 link="{{ route('prod_klej_sendvich') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ 'mgQP2OUBN7U?si=KR6H0Is7s1OHX-lr' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретанові клеї однокомпонентні для поролону, мікрофібри, текстилю') }}"
@@ -81,7 +81,7 @@ name('py_klei');
                 description="{{ __('Поліуретановий клей двокомпонентний для паркету та загальнобудівельного призначення ') }}"
                 image="{{ Vite::asset('resources/img/mat_4/06.jpg') }}"
                 link="{{ route('prod_klej_parketu') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ 'oFXAYIwb2lw?si=o4fNi96jVLNELfkt' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретановий клей двокомпонентний для штучної трави') }}"
