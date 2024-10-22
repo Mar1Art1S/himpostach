@@ -67,7 +67,7 @@ enum CategoryEnum: string implements HasLabel
             self::PROD_LAK_AKRIL =>  __('Акрилові та акрил-поліуретанові сополімери'),
             self::PROD_KILIMA =>  __('Сировина для поліуретанового кам`яного килима'),
             self::PROD_EMK =>  __('Ефект мокрого каменю'),
-            self::PROD_GIDRO =>  __('Сировина для гідроізоляції'),
+            self::PROD_GIDRO => __('Сировина для гідроізоляції'),
 
         };
     }
