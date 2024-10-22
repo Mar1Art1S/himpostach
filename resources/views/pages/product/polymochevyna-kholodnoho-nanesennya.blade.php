@@ -3,7 +3,7 @@
 use function Laravel\Folio\name;
 use App\Models\Product;
 
-$products=Product::where('category',App\Enums\CategoryEnum::PROD_GIDRO)->get();
+$products=Product::where('category',App\Enums\CategoryEnum::PROD_GIDR)->get();
 
 name('poli_moch_kholodno');
 ?>
