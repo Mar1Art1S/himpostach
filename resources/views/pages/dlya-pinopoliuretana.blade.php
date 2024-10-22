@@ -44,14 +44,14 @@ name('ppy_serovine');
                 description="{{ __('Сировина для пінополіуретана складається з двох компонентів – поліолу та ізоцианату. Ми виробляємо сировину для жорстких пін') }}"
                 image="{{ Vite::asset('resources/img/6_PPU_grup/001.jpeg') }}"
                 link="{{ route('prod_ppu_napilennya')}}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ '22eQEvQuodk?si=NlPmeucuI7hUylCY' }}"
             />
             <x-category-v
                 title="{{ __('ППУ для шкарлупи') }}"
                 description="{{ __('Застосовується у виробництві теплоізоляційних напівциліндрів (шкарлуп), призначених для теплоізоляції трубопровідних систем теплопостачання та ') }}"
                 image="{{ Vite::asset('resources/img/6_PPU_grup/002.jpeg') }}"
                 link="{{ route('prod_ppu_shkarlupi')}}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ 'TwJNP9auUjA?si=BGjTF5bDB9mZpjcv' }}"
             />
             <x-category-v
                 title="{{ __('ППУ попередньо-ізольованих труб') }}"
@@ -72,7 +72,7 @@ name('ppy_serovine');
                 description=" {{ __('Пінополіуретан (ППУ) може бути використаний для декору та виробів негабаритних розмірів, таких як вулики тощо. ППУ може бути легко формованим') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/005.jpeg') }}"
                 link="{{ route('prod_ppu_virobiv') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video="{{ '-sRdI0quOt0?si=5XTSfx9xKx5lgbmt' }}"
             />
             <x-category-v
                 title=" {{ __('ППУ для зміцнення вугільного масиву, зміцнення фундаментів') }} "

@@ -50,8 +50,7 @@ module.exports = {
             },
 
             backgroundImage: {
-                "icon-telegram":
-                    "url('/public/img/1_social__icon/telegram.svg')",
+                "icon-telegram": "url('/public/img/1_social__icon/telegram.svg')",
                 "icon-viber": "url('/public/img/1_social__icon/viber.svg')",
                 "icon-call": "url('/public/img/1_social__icon/call.svg')",
                 "icon-cart": "url('/public/img/1_social__icon/cart.svg')",

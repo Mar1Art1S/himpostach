@@ -17,14 +17,16 @@
             {{ $description }}
         </p>
         <div class="flex items-center justify-center">
-            <a class="inline-block px-12 py-3 text-sm text-white border border-white rounded font-r400 bg-amber-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
+            <a class="inline-block px-12 py-3 text-sm text-white border border-white rounded font-r400 bg-amber-400
+            hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white lf:px-8 lf:py-2"
                href="{{ $link }}">
                 {{ __('Далі') }}
             </a>
             <div x-data="{ modalOpen: false }" @keydown.escape.window="modalOpen = false"
                  class="relative z-50 w-auto h-auto">
                 <button @click="modalOpen=true"
-                        class="inline-block w-40 px-12 py-3 m-2 text-sm text-white bg-blue-800 border border-white rounded font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75">
+                        class="inline-block w-40 px-12 py-3 m-2 text-sm text-white bg-blue-800 border border-white rounded
+                        font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75 lf:py-2 lf:px-4 lf:w-24">
                     {{ __('Відео') }}</button>
                 <template x-teleport="body">
                     <div x-show="modalOpen"
@@ -47,7 +49,7 @@
 
                                 <button @click="modalOpen=false"
                                         class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-5 mr-5 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    <svg class="w-8 h-8 block" xmlns="http://www.w3.org/2000/svg" fill="none"
                                          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
                                     </svg>

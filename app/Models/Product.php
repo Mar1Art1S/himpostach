@@ -10,7 +10,16 @@ use Illuminate\Validation\Rule;
 class Product extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'category', 'options', 'tds_file', 'tex_doc_file', 'tds_title', 'tds_content'];
+    protected $fillable = [
+        'name',
+        'category',
+        'options',
+        'tds_file',
+        'tex_doc_file',
+        'tds_title',
+        'tds_content',
+        'tehcarta_content'
+    ];
 
     protected $casts = [
         'category' => CategoryEnum::class,

@@ -53,8 +53,9 @@ name('py_serovine');
             <x-category-v
                     title=" {{ __('Поліуретан ливарний компактний') }}"
                     description="{{ __('Поліуретан ливарний компактний є популярним матеріалом для виготовлення різноманітних виробів...') }}"
-                    image="{{ Vite::asset('resources/img/mat_2/01.jpg') }}" link="{{ route('prod_pu_livarnij') }}"
-                    video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                    image="{{ Vite::asset('resources/img/mat_2/01.jpg') }}"
+                    link="{{ route('prod_pu_livarnij') }}"
+                    video="{{ 'hhkZFJQwQmc?si=lnbvXBkrxqyZfzXi' }}"
 
             />
             <x-category-v
@@ -69,7 +70,7 @@ name('py_serovine');
                     description="{{ __('Поліуретанові еластомери широко використовуються в різних галузях через їх властивості, такі як...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/03.jpg') }}"
                     link="{{ route('prod_pu_elastomiri') }}"
-                    video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                    video="{{ 'Gtbn_KSweLY?si=Z9yzD9QhkwdJbezB' }}"
             />
             <x-category-v
                     title=" {{ __('Поліуретанова паста') }}"

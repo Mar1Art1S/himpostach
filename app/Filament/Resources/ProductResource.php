@@ -57,6 +57,11 @@ class ProductResource extends Resource
                     ->theme('github')
                     ->darkTheme('dracula')
                     ->columnSpanFull(),
+                AceEditor::make('tehcarta_content')
+                    ->mode('html')
+                    ->theme('github')
+                    ->darkTheme('dracula')
+                    ->columnSpanFull(),
             ]);
     }
 

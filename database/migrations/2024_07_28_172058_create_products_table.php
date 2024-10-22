@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('tex_doc_file')->nullable();
             $table->string('tds_title')->nullable();
             $table->longText('tds_content')->nullable();
+            $table->longText('tehcarta_content')->nullable();
 
             $table->timestamps();
 
