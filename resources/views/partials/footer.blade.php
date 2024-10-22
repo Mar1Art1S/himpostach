@@ -44,7 +44,7 @@
                     <a href="tel:+380503403547" class="w-1/2 block text-1.5xl ml-4 font-r500 sf:w-full lf:text-xl">{{ __('+38 (050)
                         340-35-47') }}</a>
                 </div>
-                <div class="items-center bg-gray-500 w-full h-[2px] mb-2"></div>
+                <div class="items-center bg-gray-500 w-full h-[2px] mb-4"></div>
                 <div class="items-center bg-gray-500 w-full h-[2px]"></div>
                 <div class="flex flex-row justify-start order-1 mt-2">
                     <div class=" text-gray-900 font-r400 text-start text-1.5xl xs:text-sm lf:text-xl">{{ __('Графік роботи:') }}

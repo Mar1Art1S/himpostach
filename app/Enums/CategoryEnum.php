@@ -33,6 +33,7 @@ enum CategoryEnum: string implements HasLabel
     case PROD_LAK_AKRIL = 'prod_lak_akril';
     case PROD_KILIMA = 'py_kilima';
     case PROD_EMK = 'py_emk';
+    case PROD_GIDRO = 'py_gidro';
 
 
     public function getLabel(): string
@@ -66,6 +67,7 @@ enum CategoryEnum: string implements HasLabel
             self::PROD_LAK_AKRIL =>  __('Акрилові та акрил-поліуретанові сополімери'),
             self::PROD_KILIMA =>  __('Сировина для поліуретанового кам`яного килима'),
             self::PROD_EMK =>  __('Ефект мокрого каменю'),
+            self::PROD_GIDRO =>  __('Сировина для гідроізоляції'),
 
         };
     }
