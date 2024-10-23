@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('contact');
             $table->string('city')->nullable();
             $table->text('description')->nullable();
-            $table->string('product')->nullable()->change();
+            $table->string('product')->nullable();
             $table->enum('status', OrderStatus::all())->default(OrderStatus::NEW);
             $table->timestamps();
             $table->softDeletes();
