@@ -39,6 +39,9 @@
 
         <input type="hidden" wire:model='order.product' value="{{ $product }}" />
 
+
+
+
         <div class="flex flex-row justify-between mt-8 gap-y-4">
             <x-button @click="modalOpen=false" type="button">
                 {{ __('Відмінити') }}

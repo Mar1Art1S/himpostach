@@ -13,10 +13,11 @@ class Order extends Component
 
     public OrderForm $order;
 
+
     public function save()
     {
-        $this->order->store($this->product);
 
+        $this->order->store($this->product);
         $this->sendToMail();
 
         session()->flash('order-success');
@@ -30,5 +31,8 @@ class Order extends Component
     public function render()
     {
         return view('livewire.order');
+
     }
 }
+
+
