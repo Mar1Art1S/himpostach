@@ -1,4 +1,4 @@
-@props(['image', 'title', 'description', 'link', 'video' => null])
+@props(['image', 'title', 'description', 'link', 'video_one', 'video_two', 'video_three', 'video_four', 'video_five'])
 
 <x-decor.flip-v>
 
@@ -43,7 +43,7 @@
                              x-transition:leave="ease-in duration-200"
                              x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                              x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                             class="relative w-[600px] h-[400px]  py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
+                             class="relative w-[600px] h-[500px]  py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
                             <div class="flex items-center justify-between pb-2 ">
 
 
@@ -55,13 +55,13 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="relative w-auto">
-                                <div class="">
-                                    @isset($video)
+                            <div class="relative w-auto flex flex-col">
+                                <div class="my-2 pt-5">
+                                    @isset($video_one)
                                         <iframe
                                                 width="510"
                                                 height="340"
-                                                src="https://www.youtube.com/embed/{{$video }}"
+                                                src="https://www.youtube.com/embed/{{$video_one }}"
                                                 title="YouTube video player"
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -71,6 +71,67 @@
                                         </iframe>
                                     @endisset
                                 </div>
+                                <div class="my-1">
+                                    @isset($video_two)
+                                        <iframe
+                                                width="510"
+                                                height="340"
+                                                src="https://www.youtube.com/embed/{{$video_two }}"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen>
+
+                                        </iframe>
+                                    @endisset
+                                </div>
+                                <div class="my-1">
+                                    @isset($video_three)
+                                        <iframe
+                                                width="510"
+                                                height="340"
+                                                src="https://www.youtube.com/embed/{{$video_three }}"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen>
+
+                                        </iframe>
+                                    @endisset
+                                </div>
+                                <div class="my-1">
+                                    @isset($video_four)
+                                        <iframe
+                                                width="510"
+                                                height="340"
+                                                src="https://www.youtube.com/embed/{{$video_four }}"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen>
+
+                                        </iframe>
+                                    @endisset
+                                </div>
+                                <div class="my-1">
+                                    @isset($video_five)
+                                        <iframe
+                                                width="510"
+                                                height="340"
+                                                src="https://www.youtube.com/embed/{{$video_five }}"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen>
+
+                                        </iframe>
+                                    @endisset
+                                </div>
+
                             </div>
                         </div>
                     </div>

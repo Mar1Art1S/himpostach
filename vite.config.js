@@ -11,6 +11,6 @@ export default defineConfig({
     ],
 
     server: {
-        port: 9800, // or any other available port
+        port: 3100, // or any other available port
     },
 });

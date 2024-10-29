@@ -23,8 +23,9 @@
             <x-modal title="Замовлення товару" :product="$product">
                 <x-slot:button>
                     <x-button @click="modalOpen=true" class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('Купити') }}</x-button>
-                    </x-slot>
+                </x-slot>
                     <livewire:order product="{{ $product['name'] }}" />
+
             </x-modal>
             @if($product->tds_content)
             <div x-data="{ modalOpen: false }" @keydown.escape.window="modalOpen = false"

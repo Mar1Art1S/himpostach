@@ -55,7 +55,7 @@ name('py_serovine');
                     description="{{ __('Поліуретан ливарний компактний є популярним матеріалом для виготовлення різноманітних виробів...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/01.jpg') }}"
                     link="{{ route('prod_pu_livarnij') }}"
-                    video="{{ 'hhkZFJQwQmc?si=lnbvXBkrxqyZfzXi' }}"
+                    video_one="{{ 'hhkZFJQwQmc?si=lnbvXBkrxqyZfzXi' }}"
 
             />
             <x-category-v
@@ -63,26 +63,26 @@ name('py_serovine');
                     description="{{ __('Поліуретанові сполучні для наливної підлоги є важливою складовою конструкції наливної підлоги...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/02.jpg') }}"
                     link="{{ route('prod_pu_pidlogi') }}"
-                    video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                    video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                     title=" {{ __('Поліуретанові еластоміри') }}"
                     description="{{ __('Поліуретанові еластомери широко використовуються в різних галузях через їх властивості, такі як...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/03.jpg') }}"
                     link="{{ route('prod_pu_elastomiri') }}"
-                    video="{{ 'Gtbn_KSweLY?si=Z9yzD9QhkwdJbezB' }}"
+                    video_one="{{ 'Gtbn_KSweLY?si=Z9yzD9QhkwdJbezB' }}"
             />
             <x-category-v
                     title=" {{ __('Поліуретанова паста') }}"
                     description="{{ __('Поліуретанова паста - це матеріал, який зазвичай використовується для ремонту або реставрації...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/04.jpg') }}" link="{{ route('prod_pu_pasta') }}"
-                    video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                    video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                     title=" {{ __('Пігментні пасти для поліуретанів') }}"
                     description="{{ __('Пігментні пасти для поліуретанів - це спеціальні забарвлювальні добавки, які використовуються для... ') }}"
                     image="{{ Vite::asset('resources/img/mat_2/05.jpg') }}" link="{{ route('prod_pu_pigment') }}"
-                    video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                    video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
         </x-decor.card>
     </x-section>

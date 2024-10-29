@@ -46,56 +46,56 @@ name('py_klei');
                 description="{{ __('Поліуретанові клеї для гумової та EPDM (етиленпропілендієновий каучук) крихти широко використовуються для') }}"
                 image="{{ Vite::asset('resources/img/mat_4/01.jpg') }}"
                 link="{{ route('prod_klej_krihti') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретанові клеї однокомпонентні для дерева Д4') }}"
                 description="{{ __('Поліуретановий клей однокомпонентний для дерева є відмінним вибором для склеювання дерев`яних деталей в різних') }}"
                 image="{{ Vite::asset('resources/img/mat_4/02.jpg') }}"
                 link="{{ route('prod_klej_dereva_d4') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретанові клеї однокомпонентні для сендвіч-панелей та клінкерних термопанелей') }}"
                 description="{{ __('Поліуретанові клеї для сендвіч-панелей та клінкерних термопанелей знаходять широке') }}"
                 image="{{ Vite::asset('resources/img/mat_4/03.jpg') }}"
                 link="{{ route('prod_klej_sendvich') }}"
-                video="{{ 'mgQP2OUBN7U?si=KR6H0Is7s1OHX-lr' }}"
+                video_one="{{ 'mgQP2OUBN7U?si=KR6H0Is7s1OHX-lr' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретанові клеї однокомпонентні для поролону, мікрофібри, текстилю') }}"
                 description="{{ __('Поліуретановий клей однокомпонентний призначений для склеювання поролону, мікрофібри та') }}"
                 image="{{ Vite::asset('resources/img/mat_4/04.jpg') }}"
                 link="{{ route('prod_klej_tekstilyu') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретановий клей двокомпонентний для будівельних матеріалів') }}"
                 description="{{ __('Поліуретановий клей двокомпонентний для будівельних матеріалів використовується для склеювання різних поверхонь') }}"
                 image="{{ Vite::asset('resources/img/mat_4/05.jpg') }}"
                 link="{{ route('prod_klej_budivelnih') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретановий клей двокомпонентний для паркету та загально-будівельного призначення') }}"
                 description="{{ __('Поліуретановий клей двокомпонентний для паркету та загальнобудівельного призначення ') }}"
                 image="{{ Vite::asset('resources/img/mat_4/06.jpg') }}"
                 link="{{ route('prod_klej_parketu') }}"
-                video="{{ 'oFXAYIwb2lw?si=o4fNi96jVLNELfkt' }}"
+                video_one="{{ 'oFXAYIwb2lw?si=o4fNi96jVLNELfkt' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретановий клей двокомпонентний для штучної трави') }}"
                 description="{{ __('Поліуретановий клей двокомпонентний для штучної трави використовується для монтажу та кріплення штучного газону') }}"
                 image="{{ Vite::asset('resources/img/mat_4/07.jpg') }}"
                 link="{{ route('prod_klej_travi') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
             <x-category-v
                 title=" {{ __('Водорозчинні клеї для паперу та картону') }}"
                 description="{{ __('Водорозчинні клеї для паперу та картону використовуються в різних галузях, таких як друкарство, упаковка, реклама') }}"
                 image="{{ Vite::asset('resources/img/mat_4/08.jpg') }}"
                 link="{{ route('prod_klej_kartonu') }}"
-                video="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
             />
         </x-decor.card>
     </x-section>

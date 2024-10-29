@@ -101,3 +101,12 @@ php artisan make:view view-name
     antiseptiki                                             prod_lak_antis
     smoli-alkidno-modifikovani-ta-butoksilovani             prod_lak_smoli
     akrilovi-ta-akril-poliuretanovi-sopolimeri              prod_lak_akril
+
+    гідроізоляція
+
+    polymochevyna-haryachoho-nanesennya                     poli_moch_haryacho
+    polymochevyna-kholodnoho-nanesennya                     poli_moch_kholodno
+
+
+
+
