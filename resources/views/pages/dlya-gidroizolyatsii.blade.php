@@ -42,14 +42,14 @@ name('py_gidro');
                     description="{{ __('Гідроізоляційна мембрана для плоских покрівель, терас, балконів, металевих покрівель і споруд, мостів, резервуарів') }}"
                     image="{{ Vite::asset('resources/img/mat_7/Полимочевина_гарячого_нанесення.jpeg') }}"
                     link="{{ route('poli_moch_haryacho')}}"
-                    video_one="{{ '22eQEvQuodk?si=NlPmeucuI7hUylCY' }}"
+
             />
             <x-category-v
                     title="{{ __('Полимочевина холодного нанесення') }}"
                     description="{{ __('Застосовується для терас, балконів, мостів, тунелів, підлог, паркінгів ') }}"
                     image="{{ Vite::asset('resources/img/mat_7/Полімочивина_холодного_нанесення.jpeg') }}"
                     link="{{ route('poli_moch_kholodno')}}"
-                    video_one="{{ 'TwJNP9auUjA?si=BGjTF5bDB9mZpjcv' }}"
+
             />
 
         </x-decor.card>

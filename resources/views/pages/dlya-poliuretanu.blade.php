@@ -63,7 +63,7 @@ name('py_serovine');
                     description="{{ __('Поліуретанові сполучні для наливної підлоги є важливою складовою конструкції наливної підлоги...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/02.jpg') }}"
                     link="{{ route('prod_pu_pidlogi') }}"
-                    video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                     title=" {{ __('Поліуретанові еластоміри') }}"
@@ -76,7 +76,7 @@ name('py_serovine');
                     title=" {{ __('Поліуретанова паста') }}"
                     description="{{ __('Поліуретанова паста - це матеріал, який зазвичай використовується для ремонту або реставрації...') }}"
                     image="{{ Vite::asset('resources/img/mat_2/04.jpg') }}" link="{{ route('prod_pu_pasta') }}"
-                    video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                     title=" {{ __('Пігментні пасти для поліуретанів') }}"

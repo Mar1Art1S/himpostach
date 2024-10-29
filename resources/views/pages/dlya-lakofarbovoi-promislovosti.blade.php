@@ -48,35 +48,35 @@ name('py_lak_prom');
                 description="{{ __('Сикативи та диспергатори - це речовини, які використовуються у різних галузях, зокрема у фармацевтиці, хімічній промисловості') }}"
                 image="{{ Vite::asset('resources/img/mat_5/01.jpg') }}"
                 link="{{ route('prod_lak_sikativi') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                 title=" {{ __('Каталізатори') }}"
                 description="{{ __('Каталізатори - це речовини, які прискорюють хімічні реакції, не змінюючи своєї власної структури під час процесу. Вони використовуються в широкому спектрі') }}"
                 image="{{ Vite::asset('resources/img/mat_5/02.jpg') }}"
                 link="{{ route('prod_lak_kataliz') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                 title=" {{ __('Антисептики') }}"
                 description="{{ __('Антисептики - це речовини або засоби, які використовуються для знищення або інгібування мікробів на поверхнях шкіри, ран або') }}"
                 image="{{ Vite::asset('resources/img/mat_5/03.jpg') }}"
                 link="{{ route('prod_lak_antis') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                 title=" {{ __('Смоли алкідно-модифіковані та бутоксильовані') }}"
                 description="{{ __('Смоли алкідно-модифіковані та бутоксильовані знаходять широке використання у різних галузях промисловості, включаючи') }}"
                 image="{{ Vite::asset('resources/img/mat_5/04.jpg') }}"
                 link="{{ route('prod_lak_smoli') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                 title=" {{ __('Акрилові та акрил-поліуретанові сополімери') }}"
                 description="{{ __('Акрилові та акрил-поліуретанові сополімери використовуються у широкому спектрі застосувань, включаючи виробництво фарб') }}"
                 image="{{ Vite::asset('resources/img/mat_5/05.jpg') }}"
                 link="{{ route('prod_lak_akril') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
         </x-decor.card>
     </x-section>

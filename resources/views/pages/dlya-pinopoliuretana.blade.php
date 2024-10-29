@@ -84,21 +84,21 @@ name('ppy_serovine');
                 description=" {{ __('Застосування пінополіуретану (ППУ) для зміцнення вугільного масиву або фундаментів може бути використано в окремих випадках як альтернативний метод') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/006.jpeg') }}"
                 link="{{ route('prod_ppu_masivu') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                 title=" {{ __('ППУ для заливання міжстінного простору') }} "
                 description=" {{ __('Використання пінополіуретану (ППУ) для заливання міжстінного простору є поширеною практикою в будівництві') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/007.jpeg') }}"
                 link="{{ route('prod_ppu_prostoru') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
             <x-category-v
                 title=" {{ __('ППУ для повітряних фільтрів') }} "
                 description=" {{ __('Пінополіуретан (ППУ) використовується для виготовлення повітряних фільтрів завдяки своїм властивостям, таким як висока пористість, міцність і') }} "
                 image="{{ Vite::asset('resources/img/6_PPU_grup/008.jpeg') }}"
                 link="{{ route('prod_ppu_filtriv') }}"
-                video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+
             />
         </x-decor.card>
     </x-section>
