@@ -48,7 +48,7 @@ name('py_lak_prom');
                 description="{{ __('Сикативи та диспергатори - це речовини, які використовуються у різних галузях, зокрема у фармацевтиці, хімічній промисловості') }}"
                 image="{{ Vite::asset('resources/img/mat_5/01.jpg') }}"
                 link="{{ route('prod_lak_sikativi') }}"
-
+                video_one="{{ 'm5PXt2VmMFI?si=c4-dkIqA_SkYSVcp' }}"
             />
             <x-category-v
                 title=" {{ __('Каталізатори') }}"
@@ -69,14 +69,14 @@ name('py_lak_prom');
                 description="{{ __('Смоли алкідно-модифіковані та бутоксильовані знаходять широке використання у різних галузях промисловості, включаючи') }}"
                 image="{{ Vite::asset('resources/img/mat_5/04.jpg') }}"
                 link="{{ route('prod_lak_smoli') }}"
-
+                video_one="{{ 'PwxuGiXNAH4?si=h02HfDycTtzYom8n' }}"
             />
             <x-category-v
                 title=" {{ __('Акрилові та акрил-поліуретанові сополімери') }}"
                 description="{{ __('Акрилові та акрил-поліуретанові сополімери використовуються у широкому спектрі застосувань, включаючи виробництво фарб') }}"
                 image="{{ Vite::asset('resources/img/mat_5/05.jpg') }}"
                 link="{{ route('prod_lak_akril') }}"
-
+                video_one="{{ 'HYDhc8IzRyA?si=1b_sju31jpsN9jjt' }}"
             />
         </x-decor.card>
     </x-section>
