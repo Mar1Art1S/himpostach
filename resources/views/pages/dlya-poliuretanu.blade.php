@@ -82,7 +82,7 @@ name('py_serovine');
                     title=" {{ __('Пігментні пасти для поліуретанів') }}"
                     description="{{ __('Пігментні пасти для поліуретанів - це спеціальні забарвлювальні добавки, які використовуються для... ') }}"
                     image="{{ Vite::asset('resources/img/mat_2/05.jpg') }}" link="{{ route('prod_pu_pigment') }}"
-                    video_one="{{ 'VHqhn12bUc0?si=qR2n3kgnZgEc_A_b' }}"
+                    video_one="{{ 'njCuAvQ_YNc?si=uEVedbemEHlwVsC0' }}"
             />
         </x-decor.card>
     </x-section>
