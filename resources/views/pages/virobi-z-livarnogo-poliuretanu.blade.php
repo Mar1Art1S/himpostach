@@ -45,11 +45,11 @@ name('py_pol');
     <livewire:search />
 
     <x-section>
-        <x-decor.card>
-            @foreach ($products as $product)
-                <x-product :product="$product" />
-            @endforeach
+{{--        <x-decor.card>--}}
+{{--            @foreach ($products as $product)--}}
+{{--                <x-product :product="$product" />--}}
+{{--            @endforeach--}}
 
-        </x-decor.card>
+{{--        </x-decor.card>--}}
     </x-section>
 @endsection
