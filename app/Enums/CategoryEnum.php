@@ -36,6 +36,7 @@ enum CategoryEnum: string implements HasLabel
     case PROD_HARYACHO = 'poli_haryacho';
     case PROD_KHOLODNO = 'poli_kholodno';
 
+
     public function getLabel(): string
     {
         return match ($this) {
