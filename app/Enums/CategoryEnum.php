@@ -35,6 +35,19 @@ enum CategoryEnum: string implements HasLabel
     case PROD_EMK = 'py_emk';
     case PROD_HARYACHO = 'poli_haryacho';
     case PROD_KHOLODNO = 'poli_kholodno';
+    case PROD_PY_POKRITTA = 'prod_py_pokritta';
+    case PROD_PVH_TERMOSTABILIZATOR = 'prod_pvh_termostabilizator';
+    case PROD_PVH_KIKKER = 'prod_pvh_kikker';
+    case PROD_PVH_MODIFIKATOR = 'prod_pvh_modifikator';
+    case PROD_ANTIPIRENI_PVH = 'prod_antipirenni_pvh';
+    case PROD_POLIEFIRNI_SMOLI = 'prod_poliefiri_smoli';
+    case PROD_TVERDI_PPY_NEFT = 'prod_tverdi_ppy';
+    case PROD_VIROBI_LIT_PY = 'prod_vibrobi_lit_py';
+    case PROD_PY_01 = 'prod_py_01';
+    case PROD_PY_02 = 'prod_py_02';
+    case PROD_PY_03 = 'prod_py_03';
+    case PROD_PY_04 = 'prod_py_04';
+    case PROD_PY_05 = 'prod_py_05';
 
 
     public function getLabel(): string
@@ -70,6 +83,19 @@ enum CategoryEnum: string implements HasLabel
             self::PROD_EMK =>  __('Ефект мокрого каменю'),
             self::PROD_HARYACHO => __('Полимочевина гарячого нанесення'),
             self::PROD_KHOLODNO => __('Полимочевина  холодного нанесення'),
+            self::PROD_PY_POKRITTA => __('Захисні поліуретанові покриття'),
+            self::PROD_PVH_TERMOSTABILIZATOR => __('Термостабілізатори'),
+            self::PROD_PVH_KIKKER => __('Кіккер'),
+            self::PROD_PVH_MODIFIKATOR => __('Модифікатор перероблюваності'),
+            self::PROD_ANTIPIRENI_PVH => __('Антипірени для ПВХ матеріалів, ЛФМ, поліуретанів'),
+            self::PROD_POLIEFIRNI_SMOLI => __('Поліефірні смоли для полімербетонів, склопластиків'),
+            self::PROD_TVERDI_PPY_NEFT => __('Тверді піноутворювачі для нафтових і газових свердловин'),
+            self::PROD_VIROBI_LIT_PY => __('Вироби з литого поліуретану'),
+            self::PROD_PY_01 => __('майбутня продукція 01'),
+            self::PROD_PY_02 => __('майбутня продукція 02'),
+            self::PROD_PY_03 => __('майбутня продукція 03'),
+            self::PROD_PY_04 => __('майбутня продукція 04'),
+            self::PROD_PY_05 => __('майбутня продукція 05'),
 
         };
     }
