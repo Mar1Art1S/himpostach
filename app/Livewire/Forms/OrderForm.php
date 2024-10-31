@@ -27,7 +27,7 @@ class OrderForm extends Form
     public $product;
 
 
-    public function store(string $product)
+    public function store(string | null $product)
     {
         $this->product = $product ?? 'Задайте запитання';
         $this->validate();
