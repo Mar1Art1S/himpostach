@@ -4,18 +4,18 @@
     {{-- Front side for non-xs screens --}}
     <div class="relative front xs:hidden">
         <img class="absolute" src="{{ $image }}" alt="" />
-        <h3
-                class="absolute pl-5 leading-[40px] text-3xl font-r900 bg-slate-800 bg-opacity-50 w-[400px] h-[400px] uppercase lf:w-[300px] lf:h-[300px] lf:text-2xl">
+        <h3 class="absolute pl-5 leading-[40px] text-3xl font-r900 bg-slate-800
+        bg-opacity-50 w-[400px] h-[400px] uppercase lf:w-[300px] lf:h-[300px] lf:text-2xl">
             {{ $title }}
         </h3>
     </div>
-
     {{-- Back side for non-xs screens --}}
     <div class="back xs:hidden">
         <h4 class="pt-5 text-1.5xl leading-[28px] font-r700 text-center">
             {{ $title }}
         </h4>
-        <p class="py-10 text-1.5xl font-r400 m-2 leading-[24px] text-center lf:py-4 lf:text-base lf:leading-[16px]">
+        <p class="py-10 text-1.5xl font-r400 m-2 leading-[24px] text-center
+        lf:py-4 lf:text-base lf:leading-[16px]">
             {{ $description }}
         </p>
         <div class="flex items-center justify-center">
