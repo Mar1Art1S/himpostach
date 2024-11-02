@@ -61,6 +61,7 @@ name('py_klei');
                 image="{{ Vite::asset('resources/img/mat_4/03.jpg') }}"
                 link="{{ route('prod_klej_sendvich') }}"
                 video_one="{{ 'mgQP2OUBN7U?si=KR6H0Is7s1OHX-lr' }}"
+                video_two="{{ 'm1UBoCoopcE?si=q-Pe7I8TNGDuj7_r' }}"
             />
             <x-category-v
                 title=" {{ __('Поліуретанові клеї однокомпонентні для поролону, мікрофібри, текстилю') }}"
