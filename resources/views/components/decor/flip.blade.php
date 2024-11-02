@@ -1,1 +1,1 @@
-<div class="flip"> {{ $slot }} </div>
+<div class="flip xs:hidden"> {{ $slot }} </div>

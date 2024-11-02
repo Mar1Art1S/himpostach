@@ -4,8 +4,7 @@
 
     <div class="relative front">
         <img class="absolute" src="{{ $image }}" alt=""/>
-        <h3
-                class="absolute pl-5 leading-[40px] text-3xl font-r900 bg-slate-800 bg-opacity-50 w-[400px] h-[400px] uppercase lf:w-[300px] lf:h-[300px] lf:text-2xl">
+        <h3 class="absolute pl-5 leading-[40px] text-3xl font-r900 bg-slate-800 bg-opacity-50 w-[400px] h-[400px] uppercase lf:w-[300px] lf:h-[300px] lf:text-2xl">
             {{ $title }}
         </h3>
     </div>
@@ -146,3 +145,4 @@
     </div>
 
 </x-decor.flip-v>
+

@@ -129,6 +129,8 @@
 }
 
 
+
+
 @media screen and (max-width: 1660px) {
     .flip {
         width: 300px;
@@ -140,6 +142,7 @@
         }
     }
 }
+
 
 .tds_title {
     @apply text-1.5xl font-r900 text-center font-bold;
