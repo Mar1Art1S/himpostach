@@ -145,31 +145,31 @@
 
 
 .tds_title {
-    @apply text-1.5xl font-r900 text-center font-bold xs:text-sm xs:leading-relaxed xs:tracking-tight;
+    @apply text-1.5xl font-r900 text-center font-bold sm:text-sm sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_product {
-    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold xs:text-sm xs:leading-relaxed xs:tracking-tight;
+    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold sm:text-sm sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_subtitle {
-    @apply text-xl font-r700 text-center font-bold mt-4 xs:text-sm xs:leading-relaxed xs:tracking-tight;
+    @apply text-xl font-r700 text-center font-bold mt-4 sm:text-sm sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_title_bold {
-    @apply text-xl font-r700 text-left font-bold mt-4 xs:text-sm xs:leading-relaxed xs:tracking-tight;
+    @apply text-xl font-r700 text-left font-bold mt-4 sm:text-sm sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_text {
-    @apply text-base font-r500 text-center font-medium xs:text-xs xs:leading-relaxed xs:tracking-tight;
+    @apply text-base font-r500 text-center font-medium sm:text-xs sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_text_left {
-    @apply text-base font-r500 text-left font-normal xs:text-xs xs:leading-relaxed xs:tracking-tight;
+    @apply text-base font-r500 text-left font-normal sm:text-xs sm:leading-relaxed sm:tracking-tight;
 }
 
 .grey-text-accent {
-    @apply text-blue-500 text-lg font-r700 font-semibold xs:text-sm xs:leading-relaxed xs:tracking-tight;
+    @apply text-blue-500 text-lg font-r700 font-semibold sm:text-sm sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_line {
@@ -181,7 +181,7 @@
 }
 
 .tds_table {
-    @apply min-w-full border border-collapse border-gray-300 table-auto;
+    @apply min-w-full border border-collapse border-gray-300 table-auto sm:overflow-x-auto sm:whitespace-nowrap;
 }
 
 .tds_table_bg {
@@ -189,15 +189,18 @@
 }
 
 .tds_table_title {
-    @apply px-4 xs:p-1 py-2 text-white font-r500 font-semibold border border-gray-300 xs:text-xs
-    xs:leading-relaxed xs:tracking-tight;
+    @apply px-4 sm:p-1 py-2 text-white font-r500 font-semibold border border-gray-300 sm:text-xs
+    sm:leading-relaxed sm:tracking-tight;
 }
 
 .tds_table_text {
-    @apply px-4 py-2 border border-gray-300 xs:text-xm xs:leading-relaxed xs:tracking-tight;
+    @apply px-4 py-2 border border-gray-300 sm:text-xm sm:leading-relaxed sm:tracking-tight;
 }
 .table_w {
     @apply max-w-[800px] overflow-x-auto;
+}
+.tds__card{
+    @apply sm:overflow-x-auto sm:whitespace-nowrap;
 }
 .responsive-video {
     position: relative;
