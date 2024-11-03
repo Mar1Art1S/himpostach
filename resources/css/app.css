@@ -164,8 +164,11 @@
     @apply text-base font-r500 text-center font-medium sm:text-xs sm:leading-relaxed sm:tracking-tight;
 }
 
+/*.tds_text_left {*/
+/*    @apply text-base font-r500 text-left font-normal sm:text-xs sm:leading-relaxed sm:tracking-tight;*/
+/*}*/
 .tds_text_left {
-    @apply text-base font-r500 text-left font-normal sm:text-xs sm:leading-relaxed sm:tracking-tight;
+    @apply text-base font-r500 text-left font-normal sm:text-xs sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 .grey-text-accent {
