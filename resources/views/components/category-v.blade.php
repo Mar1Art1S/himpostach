@@ -179,12 +179,12 @@
                                  x-transition:leave="ease-in duration-200"
                                  x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                                  x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                 class="relative w-[600px] h-[500px]  py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
+                                 class="relative w-auto h-[500px]  py-1 bg-white px-8 sm:max-w-lg sm:rounded-lg overflow-y-auto">
                                 <div class="flex items-center justify-between pb-2 ">
 
 
                                     <button @click="modalOpen=false"
-                                            class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-5 mr-5 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50">
+                                            class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-8 ml-8 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50">
                                         <svg class="block w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none"
                                              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -193,78 +193,73 @@
                                     </button>
                                 </div>
                                 <div class="relative flex flex-col w-auto">
-                                    <div class="pt-5 my-2">
+                                    <div class="pt-5 my-0">
                                         @isset($video_one)
                                             <iframe
-                                                    width="510"
-                                                    height="340"
-                                                    src="https://www.youtube.com/embed/{{$video_one }}"
+
+                                                    src="https://www.youtube.com/embed/{{$video_one}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     referrerpolicy="strict-origin-when-cross-origin"
-                                                    allowfullscreen>
+                                                    allowfullscreen
 
-                                            </iframe>
+                                            ></iframe>
                                         @endisset
                                     </div>
                                     <div class="my-1">
                                         @isset($video_two)
                                             <iframe
-                                                    width="510"
-                                                    height="340"
-                                                    src="https://www.youtube.com/embed/{{$video_two }}"
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/{{$video_one}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     referrerpolicy="strict-origin-when-cross-origin"
                                                     allowfullscreen>
-
                                             </iframe>
                                         @endisset
                                     </div>
                                     <div class="my-1">
                                         @isset($video_three)
                                             <iframe
-                                                    width="510"
-                                                    height="340"
-                                                    src="https://www.youtube.com/embed/{{$video_three }}"
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/{{$video_one}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     referrerpolicy="strict-origin-when-cross-origin"
                                                     allowfullscreen>
-
                                             </iframe>
                                         @endisset
                                     </div>
                                     <div class="my-1">
                                         @isset($video_four)
                                             <iframe
-                                                    width="510"
-                                                    height="340"
-                                                    src="https://www.youtube.com/embed/{{$video_four }}"
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/{{$video_one}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     referrerpolicy="strict-origin-when-cross-origin"
                                                     allowfullscreen>
-
                                             </iframe>
                                         @endisset
                                     </div>
                                     <div class="my-1">
                                         @isset($video_five)
                                             <iframe
-                                                    width="510"
-                                                    height="340"
-                                                    src="https://www.youtube.com/embed/{{$video_five }}"
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/{{$video_one}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     referrerpolicy="strict-origin-when-cross-origin"
                                                     allowfullscreen>
-
                                             </iframe>
                                         @endisset
                                     </div>

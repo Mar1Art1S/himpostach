@@ -145,31 +145,31 @@
 
 
 .tds_title {
-    @apply text-1.5xl font-r900 text-center font-bold xs:text-sm;
+    @apply text-1.5xl font-r900 text-center font-bold xs:text-sm xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_product {
-    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold xs:text-sm;
+    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold xs:text-sm xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_subtitle {
-    @apply text-xl font-r700 text-center font-bold mt-4 xs:text-sm;
+    @apply text-xl font-r700 text-center font-bold mt-4 xs:text-sm xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_title_bold {
-    @apply text-xl font-r700 text-left font-bold mt-4 xs:text-sm;
+    @apply text-xl font-r700 text-left font-bold mt-4 xs:text-sm xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_text {
-    @apply text-base font-r500 text-center font-medium xs:text-xs;
+    @apply text-base font-r500 text-center font-medium xs:text-xs xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_text_left {
-    @apply text-base font-r500 text-left font-normal xs:text-xs;
+    @apply text-base font-r500 text-left font-normal xs:text-xs xs:leading-relaxed xs:tracking-tight;
 }
 
 .grey-text-accent {
-    @apply text-blue-500 text-lg font-r700 font-semibold xs:text-sm;
+    @apply text-blue-500 text-lg font-r700 font-semibold xs:text-sm xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_line {
@@ -189,12 +189,28 @@
 }
 
 .tds_table_title {
-    @apply px-4 xs:p-1 py-2 text-white font-r500 font-semibold border border-gray-300 xs:text-xs;
+    @apply px-4 xs:p-1 py-2 text-white font-r500 font-semibold border border-gray-300 xs:text-xs
+    xs:leading-relaxed xs:tracking-tight;
 }
 
 .tds_table_text {
-    @apply px-4 py-2 border border-gray-300 xs:text-xm;
+    @apply px-4 py-2 border border-gray-300 xs:text-xm xs:leading-relaxed xs:tracking-tight;
 }
 .table_w {
     @apply max-w-[800px] overflow-x-auto;
+}
+.responsive-video {
+    position: relative;
+    /*padding-bottom: 56.25%; !* Співвідношення 16:9 *!*/
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
