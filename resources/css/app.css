@@ -145,23 +145,23 @@
 
 
 .tds_title {
-    @apply text-1.5xl font-r900 text-center font-bold sm:text-sm sm:leading-relaxed sm:tracking-tight;
+    @apply text-1.5xl font-r900 text-center font-bold sm:text-sm sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 .tds_product {
-    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold sm:text-sm sm:leading-relaxed sm:tracking-tight;
+    @apply text-blue-900 text-1.5xl font-r900 text-center font-bold sm:text-sm sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 .tds_subtitle {
-    @apply text-xl font-r700 text-center font-bold mt-4 sm:text-sm sm:leading-relaxed sm:tracking-tight;
+    @apply text-xl font-r700 text-center font-bold mt-4 sm:text-sm sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 .tds_title_bold {
-    @apply text-xl font-r700 text-left font-bold mt-4 sm:text-sm sm:leading-relaxed sm:tracking-tight;
+    @apply text-xl font-r700 text-left font-bold mt-4 sm:text-sm sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 .tds_text {
-    @apply text-base font-r500 text-center font-medium sm:text-xs sm:leading-relaxed sm:tracking-tight;
+    @apply text-base font-r500 text-center font-medium sm:text-xs sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 /*.tds_text_left {*/
@@ -172,7 +172,7 @@
 }
 
 .grey-text-accent {
-    @apply text-blue-500 text-lg font-r700 font-semibold sm:text-sm sm:leading-relaxed sm:tracking-tight;
+    @apply text-blue-500 text-lg font-r700 font-semibold sm:text-sm sm:leading-relaxed sm:tracking-tight whitespace-normal;
 }
 
 .tds_line {
