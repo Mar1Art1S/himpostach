@@ -194,6 +194,7 @@
                                 </div>
                                 <div class="relative flex flex-col w-auto">
                                     <div class="pt-5 my-0">
+
                                         @isset($video_one)
                                             <iframe
 
@@ -212,7 +213,7 @@
                                             <iframe
                                                     width="100%"
                                                     height="100%"
-                                                    src="https://www.youtube.com/embed/{{$video_one}}"
+                                                    src="https://www.youtube.com/embed/{{$video_two}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -226,7 +227,7 @@
                                             <iframe
                                                     width="100%"
                                                     height="100%"
-                                                    src="https://www.youtube.com/embed/{{$video_one}}"
+                                                    src="https://www.youtube.com/embed/{{$video_three}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -240,7 +241,7 @@
                                             <iframe
                                                     width="100%"
                                                     height="100%"
-                                                    src="https://www.youtube.com/embed/{{$video_one}}"
+                                                    src="https://www.youtube.com/embed/{{$video_four}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -254,7 +255,7 @@
                                             <iframe
                                                     width="100%"
                                                     height="100%"
-                                                    src="https://www.youtube.com/embed/{{$video_one}}"
+                                                    src="https://www.youtube.com/embed/{{$video_five}}"
                                                     title="YouTube video player"
                                                     frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
