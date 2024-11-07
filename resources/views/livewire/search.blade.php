@@ -1,7 +1,7 @@
 <div class="w-full h-auto py-2 px-2 mx-auto ">
     <label for="default-search" class="text-sm text-gray-100 sr-only font-r500 max-w-md">{{ __('Пошук') }}</label>
 
-    <div class="relative max-w-md w-auto mx-auto ">
+    <div class="relative max-w-[600px] w-auto mx-auto ">
         <x-input type="search" icon="search" id="default-search" placeholder="Пошук..."
                  wire:model.live="search" />
     </div>
