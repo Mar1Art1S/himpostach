@@ -1,4 +1,4 @@
-<div class="w-full h-auto py-2 mx-auto ">
+<div class="w-full h-auto py-2 px-2 mx-auto ">
     <label for="default-search" class="text-sm text-gray-100 sr-only font-r500 max-w-md">{{ __('Пошук') }}</label>
 
     <div class="relative max-w-md w-auto m-auto">
