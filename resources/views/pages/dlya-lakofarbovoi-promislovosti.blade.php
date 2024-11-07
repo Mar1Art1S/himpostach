@@ -38,7 +38,7 @@ name('py_lak_prom');
         </x-slot>
 
     </x-category-header>
-    <livewire:search/>
+
 
     <x-section>
 

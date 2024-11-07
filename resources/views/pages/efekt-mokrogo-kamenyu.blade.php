@@ -40,7 +40,7 @@ name('py_emk');
         </x-slot>
 
     </x-category-header>
-    <livewire:search />
+
 
     <x-section>
         <x-decor.card>

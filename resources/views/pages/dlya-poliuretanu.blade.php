@@ -46,7 +46,7 @@ name('py_serovine');
         </x-slot>
 
     </x-category-header>
-    <livewire:search/>
+
 
     <x-section>
         <x-decor.card>

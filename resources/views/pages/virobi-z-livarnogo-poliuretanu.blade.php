@@ -42,7 +42,7 @@ name('py_pol');
         </x-slot>
 
     </x-category-header>
-    <livewire:search />
+
 
     <x-section>
 {{--        <x-decor.card>--}}

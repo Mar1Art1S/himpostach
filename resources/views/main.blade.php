@@ -50,8 +50,8 @@
             </div>
         </div>
     </div>
+    @livewire('search')
 
-    <livewire:search />
 </x-section>
 
 <x-section class="container mx-auto">

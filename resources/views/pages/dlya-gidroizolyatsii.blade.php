@@ -32,7 +32,7 @@ name('py_gidro');
         </x-slot>
 
     </x-category-header>
-    <livewire:search/>
+
 
     <x-section>
 
