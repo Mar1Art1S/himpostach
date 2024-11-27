@@ -1,9 +1,9 @@
 <div class="w-full h-auto py-2 px-2 mx-auto ">
-    <label for="default-search" class="text-sm text-gray-100 sr-only font-r500 max-w-md">{{ __('Пошук') }}</label>
+    <label for="default-search" class="text-sm text-gray-100 sr-only font-r500 max-w-md">{{ __('search.search_search') }}</label>
 
     <div class="relative max-w-[600px] w-auto mx-auto ">
-        <x-input type="search" icon="search" id="default-search" placeholder="Пошук..."
-                 wire:model.live="search" />
+        <x-input type="search" icon="search" id="default-search" placeholder="{{ __('search.search_placeholder') }}"
+                 wire:model.live="search"/>
     </div>
 
     <div class="mt-4 ">
@@ -29,11 +29,12 @@
                                 {{ $product->name }}
                             </h4>
                             <div class="flex flex-col items-center justify-center mt-5 space-y-3">
-                                <x-modal title="Замовлення товару" :product="$product">
+                                <x-modal title="{{ __('search.search_ordering_goods') }}" :product="$product">
                                     <x-slot:button>
-                                        <x-button @click="modalOpen=true" class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('Купити') }}</x-button>
+                                        <x-button @click="modalOpen=true"
+                                                  class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('search.search_buy') }}</x-button>
                                     </x-slot>
-                                    <livewire:order product="{{ $product['name'] }}" />
+                                    <livewire:order product="{{ $product['name'] }}"/>
 
                                 </x-modal>
                                 @if($product->tds_content)
@@ -41,13 +42,16 @@
                                          class="relative z-50 w-auto h-auto">
                                         <button @click="modalOpen=true"
                                                 class="inline-block w-40 px-12 py-3 m-2 text-sm text-white bg-blue-800 border border-white rounded font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75 lf:py-2 lf:px-4 lf:w-24">
-                                            {{ __('TDS') }}</button>
+                                            {{ __('search.search_tds') }}</button>
                                         <template x-teleport="body">
                                             <div x-show="modalOpen"
-                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
+                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen"
+                                                 x-cloak>
                                                 <div x-show="modalOpen" x-transition:enter="ease-out duration-300"
-                                                     x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                                                     x-transition:leave="ease-in duration-300" x-transition:leave-start="opacity-100"
+                                                     x-transition:enter-start="opacity-0"
+                                                     x-transition:enter-end="opacity-100"
+                                                     x-transition:leave="ease-in duration-300"
+                                                     x-transition:leave-start="opacity-100"
                                                      x-transition:leave-end="opacity-0" @click="modalOpen=false"
                                                      class="absolute inset-0 w-full h-full bg-black bg-opacity-40"></div>
                                                 <div x-show="modalOpen" x-trap.inert.noscroll="modalOpen"
@@ -62,9 +66,12 @@
                                                         <h3 class="text-lg font-semibold"> {{ $product->tds_title }}</h3>
                                                         <button @click="modalOpen=false"
                                                                 class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-5 mr-5 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50">
-                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                                 fill="none"
+                                                                 viewBox="0 0 24 24" stroke-width="1.5"
+                                                                 stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                      d="M6 18L18 6M6 6l12 12"/>
                                                             </svg>
                                                         </button>
                                                     </div>
@@ -84,15 +91,18 @@
 
                                         <button @click="modalOpen=true"
                                                 class="inline-block w-[100px]  text-sm text-white text-center font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75">
-                                            {{ __('Технологічна карта') }}
+                                            {{ __('search.search_technological_map') }}
                                         </button>
 
                                         <template x-teleport="body">
                                             <div x-show="modalOpen"
-                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
+                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen"
+                                                 x-cloak>
                                                 <div x-show="modalOpen" x-transition:enter="ease-out duration-300"
-                                                     x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                                                     x-transition:leave="ease-in duration-300" x-transition:leave-start="opacity-100"
+                                                     x-transition:enter-start="opacity-0"
+                                                     x-transition:enter-end="opacity-100"
+                                                     x-transition:leave="ease-in duration-300"
+                                                     x-transition:leave-start="opacity-100"
                                                      x-transition:leave-end="opacity-0" @click="modalOpen=false"
                                                      class="absolute inset-0 w-full h-full bg-black bg-opacity-40"></div>
                                                 <div x-show="modalOpen" x-trap.inert.noscroll="modalOpen"
@@ -105,9 +115,12 @@
                                                      class="relative w-[860px] h-[700px] py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
                                                     <button @click="modalOpen=false"
                                                             class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-5 mr-5 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                             fill="none"
+                                                             viewBox="0 0 24 24" stroke-width="1.5"
+                                                             stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  d="M6 18L18 6M6 6l12 12"/>
                                                         </svg>
                                                     </button>
                                                 </div>
@@ -143,7 +156,8 @@
                             <div class="hidden xs:flex xs:flex-col xs:items-center xs:justify-center xs:mt-5 xs:space-y-3">
                                 <x-modal title="Замовлення товару" :product="$product">
                                     <x-slot:button>
-                                        <x-button @click="modalOpen=true" class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('Купити') }}</x-button>
+                                        <x-button @click="modalOpen=true"
+                                                  class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('search.search_buy') }}</x-button>
                                     </x-slot>
                                     <livewire:order product="{{ $product['name'] }}"/>
                                 </x-modal>
@@ -153,11 +167,12 @@
                                          class="relative z-50 w-auto h-auto">
                                         <button @click="modalOpen=true"
                                                 class="inline-block w-40 px-12 py-3 m-2 text-sm text-white bg-blue-800 border border-white rounded font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75 lf:py-2 lf:px-4 lf:w-24">
-                                            {{ __('TDS') }}
+                                            {{ __('search.search_tds') }}
                                         </button>
                                         <template x-teleport="body">
                                             <div x-show="modalOpen"
-                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
+                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen"
+                                                 x-cloak>
                                                 <div x-show="modalOpen" @click="modalOpen=false"
                                                      class="absolute inset-0 w-full h-full bg-black bg-opacity-40"></div>
                                                 <div x-show="modalOpen" x-trap.inert.noscroll="modalOpen"
@@ -166,9 +181,12 @@
                                                         <h3 class="text-sm font-semibold">{{ $product->tds_title }}</h3>
                                                         <button @click="modalOpen=false"
                                                                 class="absolute top-0 right-0 w-8 h-8 mt-5 mr-5 text-gray-600 hover:text-gray-800 hover:bg-gray-50">
-                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                                 fill="none"
+                                                                 viewBox="0 0 24 24" stroke-width="1.5"
+                                                                 stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                      d="M6 18L18 6M6 6l12 12"/>
                                                             </svg>
                                                         </button>
                                                     </div>
@@ -186,20 +204,23 @@
                                          class="relative z-50 w-auto h-auto">
                                         <button @click="modalOpen=true"
                                                 class="inline-block w-[100px] text-sm text-white font-r500 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white disabled:opacity-75">
-                                            {{ __('Технологічна карта') }}
+                                            {{ __('search.search_technological_map') }}
                                         </button>
                                         <template x-teleport="body">
                                             <div x-show="modalOpen"
-                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
+                                                 class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen"
+                                                 x-cloak>
                                                 <div x-show="modalOpen" @click="modalOpen=false"
                                                      class="absolute inset-0 w-full h-full bg-black bg-opacity-40"></div>
                                                 <div x-show="modalOpen" x-trap.inert.noscroll="modalOpen"
                                                      class="relative w-[860px] h-[700px] py-6 bg-white px-7 sm:max-w-lg sm:rounded-lg overflow-y-auto">
                                                     <button @click="modalOpen=false"
                                                             class="absolute top-0 right-0 w-8 h-8 mt-5 mr-5 text-gray-600 hover:text-gray-800 hover:bg-gray-50">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                             fill="none" viewBox="0 0 24 24"
                                                              stroke-width="1.5" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  d="M6 18L18 6M6 6l12 12"/>
                                                         </svg>
                                                     </button>
                                                     <div class="relative">

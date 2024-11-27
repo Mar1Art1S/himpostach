@@ -12,7 +12,7 @@
 <x-section class="container mx-auto">
     <div class="my-12">
         <x-slot:caption>
-            {{ __('Блог') }}
+            {{ __('other.other_blog') }}
             </x-slot>
     </div>
 

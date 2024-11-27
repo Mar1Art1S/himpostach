@@ -19,39 +19,30 @@ name('py_gidro');
 @section('content')
     <x-category-header>
         <x-slot:title>
-            {{ __('Сировина для гідроізоляції') }}
+            {{ __('mes.subproduct_top_title_py_waterproofing') }}
 
         </x-slot>
 
         <x-slot:description>
-            {{ __('Сировина для гідроізоляції – це матеріали, які створюють захисний бар`єр від проникнення води та вологи в
-            конструкції будівель. До основних видів належать полімерні речовини, такі як поліуретани, бітумні суміші на
-            основі нафти, цементні суміші з добавками, а також різні мембрани і плівки з ПВХ або поліетилену. Ці
-            матеріали використовуються для захисту фундаментів, дахів, трубопроводів, підлог та інших елементів
-            будівель, забезпечуючи довговічність і стійкість до вологи.') }}
+            {{ __('mes.subproduct_top_description_py_waterproofing') }}
         </x-slot>
 
     </x-category-header>
 
-
     <x-section>
-
         <x-decor.card>
             <x-category-v
-                    title=" {{ __('Полимочевина гарячого нанесення') }}"
-                    description="{{ __('Гідроізоляційна мембрана для плоских покрівель, терас, балконів, металевих покрівель і споруд, мостів, резервуарів') }}"
+                    title=" {{ __('mes.category_v_title_py_hot_applied_polyurea') }}"
+                    description="{{ __('mes.category_v_description_py_hot_applied_polyurea') }}"
                     image="{{ Vite::asset('resources/img/mat_7/Полимочевина_гарячого_нанесення.jpeg') }}"
                     link="{{ route('poli_moch_haryacho')}}"
-
             />
             <x-category-v
-                    title="{{ __('Полимочевина холодного нанесення') }}"
-                    description="{{ __('Застосовується для терас, балконів, мостів, тунелів, підлог, паркінгів ') }}"
+                    title="{{ __('mes.category_v_title_py_cold_applied_polyurea') }}"
+                    description="{{ __('mes.category_v_description_py_cold_applied_polyurea') }}"
                     image="{{ Vite::asset('resources/img/mat_7/Полімочивина_холодного_нанесення.jpeg') }}"
                     link="{{ route('poli_moch_kholodno')}}"
-
             />
-
         </x-decor.card>
     </x-section>
 @endsection

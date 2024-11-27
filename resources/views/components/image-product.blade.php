@@ -11,8 +11,7 @@
 
                 <div class="flex flex-row items-center w-full px-4 mt-4 ">
                     <div class="justify-start w-3/4 text-sm text-white text-start">{{ }}</div>
-                    <div class="justify-end w-1/4 text-sm font-bold text-white text-end flex-nowrap">{{
-                        }}</div>
+                    <div class="justify-end w-1/4 text-sm font-bold text-white text-end flex-nowrap">{{  }}</div>
                 </div>
 
 
@@ -29,7 +28,7 @@
         <div class="flex items-center justify-center">
             <a class="inline-block px-12 py-3 text-sm text-white border border-white rounded font-r400 bg-amber-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
                 href="{{ $link }}">
-                {{ __('Далі') }}
+                {{ __('other.other_next') }}
             </a>
         </div>
     </div>

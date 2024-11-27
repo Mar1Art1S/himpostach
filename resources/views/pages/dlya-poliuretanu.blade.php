@@ -26,62 +26,52 @@ name('py_serovine');
 @section('content')
     <x-category-header>
         <x-slot:title>
-            {{ __('СИРОВИНА ДЛЯ ПОЛІУРЕТАНУ (ПУ)') }}
+            {{ __('mes.subproduct_top_title_py') }}
 
         </x-slot>
 
         <x-slot:description>
-            {{ __('Сировина для поліуретану, яка включає поліолі та ізоціанати, широко використовується у виробництві
-            поліуретанових матеріалів. Поліуретан знаходить застосування у різних сферах, включаючи будівництво,
-            автомобільну
-            промисловість,текстильну та меблеву промисловість, електроніку та інші галузі. Його можна знайти у вигляді
-            ізоляційних матеріалів для стін, підлог та дахів, у виробництві автомобільних деталей, м`яких оббивок, пін
-            для
-            меблів, еластичних покриттів для підлог, прокладок, ущільнювачів, штучних тканин і багато іншого.
-            Використання
-            сировини для поліуретану дозволяє створювати матеріали з різними властивостями, такими як `якість,
-            гнучкість,
-            міцність, що робить його дуже популярним у виробництві різноманітних товарів.') }}
+            {{ __('mes.subproduct_top_description_py') }}
 
         </x-slot>
-
     </x-category-header>
-
 
     <x-section>
         <x-decor.card>
             <x-category-v
-                    title=" {{ __('Поліуретан ливарний компактний') }}"
-                    description="{{ __('Поліуретан ливарний компактний є популярним матеріалом для виготовлення різноманітних виробів...') }}"
+                    title=" {{ __('mes.category_v_title_py_injection_molding') }}"
+                    description="{{ __('mes.category_v_description_py_injection_molding') }}"
                     image="{{ Vite::asset('resources/img/mat_2/01.jpg') }}"
                     link="{{ route('prod_pu_livarnij') }}"
                     video_one="{{ 'hhkZFJQwQmc?si=lnbvXBkrxqyZfzXi' }}"
 
             />
             <x-category-v
-                    title=" {{ __('Поліуретанові сполучні для наливної підлоги') }}"
-                    description="{{ __('Поліуретанові сполучні для наливної підлоги є важливою складовою конструкції наливної підлоги...') }}"
+                    title=" {{ __('mes.category_v_title_py_leveling_floors') }}"
+                    description="{{ __('mes.category_v_description_py_leveling_floors') }}"
                     image="{{ Vite::asset('resources/img/mat_2/02.jpg') }}"
                     link="{{ route('prod_pu_pidlogi') }}"
 
             />
             <x-category-v
-                    title=" {{ __('Поліуретанові еластоміри') }}"
-                    description="{{ __('Поліуретанові еластомери широко використовуються в різних галузях через їх властивості, такі як...') }}"
+                    title=" {{ __('mes.category_v_title_py_elastomers') }}"
+                    description="{{ __('mes.category_v_description_py_elastomers') }}"
                     image="{{ Vite::asset('resources/img/mat_2/03.jpg') }}"
                     link="{{ route('prod_pu_elastomiri') }}"
                     video_one="{{ 'Gtbn_KSweLY?si=Z9yzD9QhkwdJbezB' }}"
             />
             <x-category-v
-                    title=" {{ __('Поліуретанова паста') }}"
-                    description="{{ __('Поліуретанова паста - це матеріал, який зазвичай використовується для ремонту або реставрації...') }}"
-                    image="{{ Vite::asset('resources/img/mat_2/04.jpg') }}" link="{{ route('prod_pu_pasta') }}"
+                    title=" {{ __('mes.category_v_title_py_paste') }}"
+                    description="{{ __('mes.category_v_description_py_paste') }}"
+                    image="{{ Vite::asset('resources/img/mat_2/04.jpg') }}"
+                    link="{{ route('prod_pu_pasta') }}"
 
             />
             <x-category-v
-                    title=" {{ __('Пігментні пасти для поліуретанів') }}"
-                    description="{{ __('Пігментні пасти для поліуретанів - це спеціальні забарвлювальні добавки, які використовуються для... ') }}"
-                    image="{{ Vite::asset('resources/img/mat_2/05.jpg') }}" link="{{ route('prod_pu_pigment') }}"
+                    title=" {{ __('mes.category_v_title_py_pigment_pastes') }}"
+                    description="{{ __('mes.category_v_description_py_pigment_pastes') }}"
+                    image="{{ Vite::asset('resources/img/mat_2/05.jpg') }}"
+                    link="{{ route('prod_pu_pigment') }}"
                     video_one="{{ 'njCuAvQ_YNc?si=uEVedbemEHlwVsC0' }}"
             />
         </x-decor.card>

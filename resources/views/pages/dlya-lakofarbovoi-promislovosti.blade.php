@@ -22,18 +22,12 @@ name('py_lak_prom');
 @section('content')
     <x-category-header>
         <x-slot:title>
-            {{ __('СИРОВИНА ДЛЯ ЛАКОФАРБОВОЇ ПРОМИСЛОВОСТІ') }}
+            {{ __('mes.subproduct_top_title_paint') }}
 
         </x-slot>
 
         <x-slot:description>
-            {{ __('Сировина для лакофарбової промисловості включає в себе різноманітні компоненти, необхідні для виробництва фарб,
-        лаків та покриттів. Основні складові включають пігменти, розчинники, смоли та добавки. Пігменти надають фарбі або
-         лаку барву та покривні властивості, розчинники використовуються для розведення смол та забезпечення потрібної
-         консистенції, а смоли формують основу покриття та відповідають за його міцність та стійкість. Добавки можуть включати
-          антиоксиданти, антибактеріальні агенти та інші речовини, які покращують характеристики фарби або лаку. Важливо
-            відзначити, що використання правильних сировинних матеріалів впливає на якість та характеристики готового продукту,
-         що виготовляється в лакофарбовій промисловості.') }}
+            {{ __('mes.subproduct_top_description_paint') }}
 
         </x-slot>
 
@@ -44,36 +38,36 @@ name('py_lak_prom');
 
         <x-decor.card>
             <x-category-v
-                title=" {{ __('Сикативи та диспергатори') }}"
-                description="{{ __('Сикативи та диспергатори - це речовини, які використовуються у різних галузях, зокрема у фармацевтиці, хімічній промисловості') }}"
+                title=" {{ __('mes.category_v_title_py_dispersants') }}"
+                description="{{ __('mes.category_v_description_py_dispersants') }}"
                 image="{{ Vite::asset('resources/img/mat_5/01.jpg') }}"
                 link="{{ route('prod_lak_sikativi') }}"
                 video_one="{{ 'm5PXt2VmMFI?si=c4-dkIqA_SkYSVcp' }}"
             />
             <x-category-v
-                title=" {{ __('Каталізатори') }}"
-                description="{{ __('Каталізатори - це речовини, які прискорюють хімічні реакції, не змінюючи своєї власної структури під час процесу. Вони використовуються в широкому спектрі') }}"
+                title=" {{ __('mes.category_v_title_py_сatalysts') }}"
+                description="{{ __('mes.category_v_description_py_сatalysts') }}"
                 image="{{ Vite::asset('resources/img/mat_5/02.jpg') }}"
                 link="{{ route('prod_lak_kataliz') }}"
 
             />
             <x-category-v
-                title=" {{ __('Антисептики') }}"
-                description="{{ __('Антисептики - це речовини або засоби, які використовуються для знищення або інгібування мікробів на поверхнях шкіри, ран або') }}"
+                title=" {{ __('mes.category_v_title_py_antiseptics') }}"
+                description="{{ __('mes.category_v_description_py_antiseptics') }}"
                 image="{{ Vite::asset('resources/img/mat_5/03.jpg') }}"
                 link="{{ route('prod_lak_antis') }}"
 
             />
             <x-category-v
-                title=" {{ __('Смоли алкідно-модифіковані та бутоксильовані') }}"
-                description="{{ __('Смоли алкідно-модифіковані та бутоксильовані знаходять широке використання у різних галузях промисловості, включаючи') }}"
+                title=" {{ __('mes.category_v_title_py_butoxylated') }}"
+                description="{{ __('mes.category_v_description_py_butoxylated') }}"
                 image="{{ Vite::asset('resources/img/mat_5/04.jpg') }}"
                 link="{{ route('prod_lak_smoli') }}"
                 video_one="{{ 'PwxuGiXNAH4?si=h02HfDycTtzYom8n' }}"
             />
             <x-category-v
-                title=" {{ __('Акрилові та акрил-поліуретанові сополімери') }}"
-                description="{{ __('Акрилові та акрил-поліуретанові сополімери використовуються у широкому спектрі застосувань, включаючи виробництво фарб') }}"
+                title=" {{ __('mes.category_v_title_py_copolymers') }}"
+                description="{{ __('mes.category_v_description_py_copolymers') }}"
                 image="{{ Vite::asset('resources/img/mat_5/05.jpg') }}"
                 link="{{ route('prod_lak_akril') }}"
                 video_one="{{ 'HYDhc8IzRyA?si=1b_sju31jpsN9jjt' }}"

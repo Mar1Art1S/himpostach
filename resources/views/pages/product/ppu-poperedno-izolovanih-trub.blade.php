@@ -29,12 +29,11 @@ name('prod_ppu_trub');
 @section('content')
     <x-category-header>
         <x-slot:title>
-            {{ __('ППУ для попередньо ізольованих труб') }}
+            {{ __('mes.product_top_title_ppy_insulated_pipes') }}
         </x-slot>
 
         <x-slot:description>
-            {{ __('Попередньо ізольовані пінополіуретаном труби є дуже ефективною та сучасною технологією енергозбереження. Ми виробляємо дві рецептури для
-            різних типів заливочних машин з різним співідношенням компонентів') }}
+            {{ __('mes.product_top_description_ppy_insulated_pipes') }}
 
         </x-slot>
 

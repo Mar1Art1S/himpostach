@@ -13,24 +13,24 @@
             <div class="ml-6 ">
                 <div class="w-full mt-4 ">
                     <span class="flex justify-start my-2 text-lg tracking-wide text-center text-gray-500 uppercase">
-                        {{ __('Приймальна директора:') }}
+                        {{ __('footer.foo_reception') }}
                     </span>
                     <div class="flex flex-row w-full gap-2 ml-2 sf:flex-col">
                         <div class="w-1/2 sf:w-full">
-                            <div>{{__('Телефон')}}</div>
+                            <div>{{__('footer.foo_phone')}}</div>
                             <div>
                                 <a href="tel:+380504756847"
                                     class="block text-1.5xl text-gray-900 font-r500 hover:opacity-75 ">
-                                    {{__('+38 (050) 475-68-47')}}
+                                    {{__('footer.foo_phone_number')}}
                                 </a>
                             </div>
                         </div>
                         <div class="w-1/2 sf:w-full">
-                            <div>{{__('Електрона аддреса')}}</div>
+                            <div>{{__('footer.foo_address')}}</div>
                             <div>
                                 <a href="mailto:director@himpost.com"
                                     class="block text-1.5xl text-gray-900 font-r500 hover:opacity-75 ">
-                                    {{__('director@himpost.com')}}
+                                    {{__('footer.foo_address_mail')}}
                                 </a>
                             </div>
                         </div>
@@ -39,41 +39,44 @@
 
                 <div class="flex flex-row items-center order-1 mt-5 sf:flex-col">
                     <div class="w-1/2 ml-2 text-gray-900 text-start font-r400 sf:w-full">
-                        {{ __('По всім технологічним, логістичним питанням звертайтесь за') }}
+                        {{ __('footer.foo_logistical') }}
                     </div>
-                    <a href="tel:+380503403547" class="w-1/2 block text-1.5xl ml-4 font-r500 sf:w-full lf:text-xl">{{ __('+38 (050)
-                        340-35-47') }}</a>
+                    <a href="tel:+380503403547" class="w-1/2 block text-1.5xl ml-4 font-r500 sf:w-full lf:text-xl">
+                        {{ __('footer.foo_logist_num') }}</a>
                 </div>
                 <div class="items-center bg-gray-500 w-full h-[2px] mb-4"></div>
                 <div class="items-center bg-gray-500 w-full h-[2px]"></div>
                 <div class="flex flex-row justify-start order-1 mt-2">
-                    <div class=" text-gray-900 font-r400 text-start text-1.5xl xs:text-sm lf:text-xl">{{ __('Графік роботи:') }}
+                    <div class=" text-gray-900 font-r400 text-start text-1.5xl xs:text-sm lf:text-xl">
+                        {{ __('footer.foo_work_schedule') }}
                     </div>
                     <div class="ml-4 text-lg">
-                        <span class="font-r500 text-1.5xl xs:text-sm">{{ __('Пн-Пт:') }} </span>{{ __('с 8:30 до 17:00') }} <span class="font-r500 text-1.5xl xs:text-sm">{{ __('Сб-Нд:') }} </span>{{
-                        __('Вихідний') }}</div>
+                        <span class="font-r500 text-1.5xl xs:text-sm">{{ __('footer.foo_mon_fri') }} </span>
+                        {{ __('footer.foo_mon_fri_numb') }} <span class="font-r500 text-1.5xl xs:text-sm">
+                            {{ __('footer.foo_sb_nd') }} </span>{{
+                        __('footer.foo_weekend') }}</div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-1 sf:px-4">
                 <div class="order-1 mt-2">
-                    <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl">{{ __('Юридична адреса:') }} </div>
-                    <div class="text-lg xs:text-sm">{{ __('82111, Україна, Львівська область
-                        вул. Самбірська, 85, Дрогобич') }} </div>
+                    <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl">
+                        {{ __('footer.foo_legal') }} </div>
+                    <div class="text-lg xs:text-sm">{{ __('footer.foo_legal_addresses') }} </div>
                 </div>
                 <div class="order-1 mt-2">
-                    <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl">{{ __('Фактична адреса:') }} </div>
-                    <div class="text-lg xs:text-sm">{{ __('39603, Україна, Полтавська обл.
-                        м. Кременчук,
-                        вул. Профспілкова, будинок. 11') }} </div>
+                    <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl">
+                        {{ __('footer.foo_actual') }} </div>
+                    <div class="text-lg xs:text-sm">
+                        {{ __('footer.foo_actual_address') }} </div>
                 </div>
                 <div class="order-1 mt-2">
-                    <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl">{{ __('м. Київ (Склад):') }} </div>
-                    <div class="text-lg xs:text-sm">{{ __('Миколи Хвильового, будинок. 15, мікрорайон Дарницький') }}
+                    <div class="ml-2 text-gray-900 text-start font-r500 text-1.5xl">{{ __('footer.foo_composition') }} </div>
+                    <div class="text-lg xs:text-sm">{{ __('footer.foo_composition_address') }}
                     </div>
                     <div class="flex flex-row justify-start">
-                        <div class="text-lg font-r500">{{ __('моб.') }}</div>
-                        <a href="tel:+380503482310" class="ml-2 text-lg">{{ __('+38 (050) 348-23-10') }} </a>
+                        <div class="text-lg font-r500">{{ __('footer.foo_mob') }}</div>
+                        <a href="tel:+380503482310" class="ml-2 text-lg">{{ __('footer.foo_mob_numb') }} </a>
                     </div>
                 </div>
             </div>

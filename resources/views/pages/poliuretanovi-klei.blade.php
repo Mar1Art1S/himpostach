@@ -23,17 +23,12 @@ name('py_klei');
 @section('content')
     <x-category-header>
         <x-slot:title>
-            {{ __('ПОЛІУРЕТАНОВІ КЛЕЇ') }}
+            {{ __('mes.subproduct_top_title_py_glue') }}
 
         </x-slot>
 
         <x-slot:description>
-            {{ __('Поліуретанові клеї широко використовуються в різних галузях промисловості та ремонту. Вони є дуже міцними
-        та мають широкий спектр застосувань завдяки своїм властивостям. Ці клеї чудово підходять для склеювання дерев`яних
-        елементів, таких як меблі, підлоги, двері тощо, завдяки високій міцності зчеплення з деревиною та вологостійкості.
-        Вони також широко використовуються в автомобільній промисловості для склеювання внутрішніх деталей автомобілів,
-        наприклад, панелей приладів чи оббивки сидінь. Крім того, поліуретанові клеї дуже популярні в ремонті та будівництві,
-        де вони можуть бути використані для різноманітних конструкційних робіт та ремонтних заходів.') }}
+            {{ __('mes.subproduct_top_description_py_glue') }}
         </x-slot>
 
     </x-category-header>
@@ -42,58 +37,58 @@ name('py_klei');
     <x-section>
         <x-decor.card>
             <x-category-v
-                title=" {{ __('Поліуретанові клеї для гумової та EPDM крихти') }}"
-                description="{{ __('Поліуретанові клеї для гумової та EPDM (етиленпропілендієновий каучук) крихти широко використовуються для') }}"
+                title=" {{ __('mes.category_v_title_glue_epdm') }}"
+                description="{{ __('mes.category_v_description_glue_epdm') }}"
                 image="{{ Vite::asset('resources/img/mat_4/01.jpg') }}"
                 link="{{ route('prod_klej_krihti') }}"
 
             />
             <x-category-v
-                title=" {{ __('Поліуретанові клеї однокомпонентні для дерева Д4') }}"
-                description="{{ __('Поліуретановий клей однокомпонентний для дерева є відмінним вибором для склеювання дерев`яних деталей в різних') }}"
+                title=" {{ __('mes.category_v_title_glue_d4_wood') }}"
+                description="{{ __('mes.category_v_description_glue_d4_wood') }}"
                 image="{{ Vite::asset('resources/img/mat_4/02.jpg') }}"
                 link="{{ route('prod_klej_dereva_d4') }}"
 
             />
             <x-category-v
-                title=" {{ __('Поліуретанові клеї однокомпонентні для сендвіч-панелей та клінкерних термопанелей') }}"
-                description="{{ __('Поліуретанові клеї для сендвіч-панелей та клінкерних термопанелей знаходять широке') }}"
+                title=" {{ __('mes.category_v_title_glue_clinker_thermal_panels') }}"
+                description="{{ __('mes.category_v_description_glue_clinker_thermal_panels') }}"
                 image="{{ Vite::asset('resources/img/mat_4/03.jpg') }}"
                 link="{{ route('prod_klej_sendvich') }}"
                 video_one="{{ 'mgQP2OUBN7U?si=KR6H0Is7s1OHX-lr' }}"
                 video_two="{{ 'm1UBoCoopcE?si=q-Pe7I8TNGDuj7_r' }}"
             />
             <x-category-v
-                title=" {{ __('Поліуретанові клеї однокомпонентні для поролону, мікрофібри, текстилю') }}"
-                description="{{ __('Поліуретановий клей однокомпонентний призначений для склеювання поролону, мікрофібри та') }}"
+                title=" {{ __('mes.category_v_title_glue_foam_textiles') }}"
+                description="{{ __('mes.category_v_description_glue_foam_textiles') }}"
                 image="{{ Vite::asset('resources/img/mat_4/04.jpg') }}"
                 link="{{ route('prod_klej_tekstilyu') }}"
 
             />
             <x-category-v
-                title=" {{ __('Поліуретановий клей двокомпонентний для будівельних СИПУЧИХ матеріалів') }}"
-                description="{{ __('Поліуретановий клей двокомпонентний для будівельних матеріалів використовується для склеювання різних поверхонь') }}"
+                title=" {{ __('mes.category_v_title_glue_bulk_materials') }}"
+                description="{{ __('mes.category_v_description_glue_bulk_materials') }}"
                 image="{{ Vite::asset('resources/img/mat_4/05.jpg') }}"
                 link="{{ route('prod_klej_budivelnih') }}"
 
             />
             <x-category-v
-                title=" {{ __('Поліуретановий клей двокомпонентний для паркету та загально-будівельного призначення') }}"
-                description="{{ __('Поліуретановий клей двокомпонентний для паркету та загальнобудівельного призначення ') }}"
+                title=" {{ __('mes.category_v_title_glue_parquet') }}"
+                description="{{ __('mes.category_v_description_glue_parquet') }}"
                 image="{{ Vite::asset('resources/img/mat_4/06.jpg') }}"
                 link="{{ route('prod_klej_parketu') }}"
                 video_one="{{ 'oFXAYIwb2lw?si=o4fNi96jVLNELfkt' }}"
             />
             <x-category-v
-                title=" {{ __('Поліуретановий клей двокомпонентний для штучної трави') }}"
-                description="{{ __('Поліуретановий клей двокомпонентний для штучної трави використовується для монтажу та кріплення штучного газону') }}"
+                title=" {{ __('mes.category_v_title_glue_artificial_grass') }}"
+                description="{{ __('mes.category_v_description_glue_artificial_grass') }}"
                 image="{{ Vite::asset('resources/img/mat_4/07.jpg') }}"
                 link="{{ route('prod_klej_travi') }}"
 
             />
             <x-category-v
-                title=" {{ __('Водорозчинні клеї для паперу та картону') }}"
-                description="{{ __('Водорозчинні клеї для паперу та картону використовуються в різних галузях, таких як друкарство, упаковка, реклама') }}"
+                title=" {{ __('mes.category_v_title_glue_paper_cardboard') }}"
+                description="{{ __('mes.category_v_description_glue_paper_cardboard') }}"
                 image="{{ Vite::asset('resources/img/mat_4/08.jpg') }}"
                 link="{{ route('prod_klej_kartonu') }}"
 

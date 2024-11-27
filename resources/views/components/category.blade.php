@@ -21,7 +21,7 @@
         <div class="flex items-center justify-center">
             <a class="inline-block px-12 py-3 text-sm text-white border border-white rounded font-r400 bg-amber-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
                href="{{ $link }}">
-                {{ __('Далі') }}
+                {{ __('other.other_next') }}
             </a>
         </div>
     </div>
@@ -40,7 +40,7 @@
     <div class="xs:absolute xs:bottom-5 xs:w-full xs:flex xs:justify-center">
         <a class="xs:rounded xs:px-6 xs:py-2 xs:text-sm xs:text-white xs:font-r400 xs:bg-amber-400 xs:hover:bg-transparent xs:hover:text-white focus:outline-none focus:ring active:text-white"
            href="{{ $link }}">
-            {{ __('Далі') }}
+            {{ __('other.other_next') }}
         </a>
     </div>
 </div>
