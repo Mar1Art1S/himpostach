@@ -9,13 +9,13 @@ use Illuminate\Notifications\Notifiable;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Panel;
 
-class User extends Authenticatable  //implements FilamentUser
+class User extends Authenticatable  implements FilamentUser
 {
     use HasFactory, Notifiable;
-//    public function canAccessPanel(Panel $panel): bool
-//    {
-//        return str_ends_with($this->email, '@gmail.com') && $this->hasVerifiedEmail();
-//    }
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return str_ends_with($this->email, '@gmail.com') && $this->hasVerifiedEmail();
+    }
     /**
      * The attributes that are mass assignable.
      *
