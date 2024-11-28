@@ -16,7 +16,7 @@
 
     {!! seo($article ?? null) !!}
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/calc.js', 'resources/js/app.js'])
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WSPMVQ2DB"></script>
 <script>

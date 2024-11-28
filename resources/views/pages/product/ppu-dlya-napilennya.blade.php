@@ -37,7 +37,9 @@ name('prod_ppu_napilennya');
         </x-slot>
 
     </x-category-header>
-    <livewire:search/>
+
+    <livewire:insulation-form/>
+
 {{--@dump($products)--}}
     <x-section>
         <x-decor.card>
