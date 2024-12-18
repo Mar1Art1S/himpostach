@@ -7,10 +7,7 @@
             {{ $product->getTranslation('name', app()->getLocale()) }}
         </h2>
         <div>
-            @php
-                $options = json_decode($product->getTranslation('options', app()->getLocale()), true);
-            @endphp
-            @foreach ($options as $option)
+            @foreach ($product->getTranslation('options', app()->getLocale()) as $options)
             <div class="flex flex-row items-center w-full px-4 mt-4 lf:mt-2">
                 <div class="justify-start w-3/4 text-sm text-white text-start lf:leading-[15px] lf:w-2/3">{{
                     $options['name'] }}</div>
