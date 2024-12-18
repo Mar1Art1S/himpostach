@@ -5,25 +5,31 @@ namespace App\Models;
 use App\Enums\CategoryEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use Spatie\Translatable\HasTranslations;
 use Illuminate\Validation\Rule;
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory,  HasTranslations;
+
+    public array $translatable = [
+      'name',
+      'options',
+    ];
+
     protected $fillable = [
         'name',
         'category',
         'options',
-        'tds_file',
-        'tex_doc_file',
-        'tds_title',
         'tds_content',
         'tehcarta_content'
     ];
 
     protected $casts = [
         'category' => CategoryEnum::class,
-        'options' => 'json',
+        'name' => 'array',
+        'options' => 'array',
+        'tds_content' => 'array',
+        'tehcarta_content' => 'array',
     ];
 
     public function rules(): array

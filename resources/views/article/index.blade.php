@@ -16,6 +16,7 @@
             </div>
         </div> --}}
         <x-decor.card>
+
             @foreach($articles as $article)
             <div class="flex flex-col items-start w-[400px] h-[440px]">
                 <a href="{{ route('article.show', [$article->category->slug, $article->slug]) }}" class="block">

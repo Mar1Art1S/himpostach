@@ -9,6 +9,7 @@
 @section('og_image', Vite::asset('resources/img/3_main/BGr.jpg'))
 @section('content')
     <x-section class="my-0 bg-amber-400">
+
         <x-decor.fon/>
         <div>
             <div class="relative z-20 flex flex-col items-center justify-center">

@@ -24,8 +24,6 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained('article_categories');
             $table->dateTime('published_at')->nullable();
             $table->boolean('active')->default(false);
-
-
             $table->timestamps();
         });
     }

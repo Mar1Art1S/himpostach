@@ -1,28 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-composer install  
-yarn install  
-yarn build
-php artisan migrate:fresh
-php artisan migrate  
-php artisan make:filament-user  
-Вказати будь-які дані користувача _(пошту вказати ту, якою потрібно буде авторизовуватись для входу в панель керування)_
+    <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+    composer install  
+    yarn install  
+    yarn build
+    php artisan migrate:fresh
+    php artisan migrate  
+    php artisan make:filament-user  
+    Вказати будь-які дані користувача _(пошту вказати ту, якою потрібно буде авторизовуватись для входу в панель керування)_
+    
+    За необхідністю, для наповнення бази даних тестовими даними, виконати:  
+    php artisan db:seed
+    yarn upgrade
+    composer update
 
-За необхідністю, для наповнення бази даних тестовими даними, виконати:  
-php artisan db:seed
+## Локалізація
+    php artisan make:model Language -m
+    php artisan migrate:rollback - відкат
+    php artisan make:command InstallLanguagesCommand
+    php artisan make:command InstallCommand
+    php artisan make:middleware LanguageHeaderMiddleware - Розібратися
+    {{ app()->getLocale() }} - визначення мови
+
 
 ## Кеш
-php artisan config:clear
-php artisan route:clear
-php artisan view:clear
-php artisan cache:clear
+    php artisan config:clear
+    php artisan route:clear
+    php artisan view:clear
+    php artisan cache:clear
 
 ## Використання іконок
 
-Компонент іконок використовується Lucide
-mallardduck/blade-lucide-icons
-**Сайт для вибору https://lucide.dev**
-Щоб викликати потрібну іконку необхідно зайти на вищевказаний сайт та обрати назву потрібної іконки.
-Потім в шаблоні викликати: **<x-lucide-назва-іконки class="size-5" />**
+    Компонент іконок використовується Lucide
+    mallardduck/blade-lucide-icons
+    **Сайт для вибору https://lucide.dev**
+    Щоб викликати потрібну іконку необхідно зайти на вищевказаний сайт та обрати назву потрібної іконки.
+    Потім в шаблоні викликати: **<x-lucide-назва-іконки class="size-5" />**
 
 ## Ось список основних команд php artisan make у Laravel:
 
@@ -39,17 +50,17 @@ mallardduck/blade-lucide-icons
     Шаблон: php artisan make:mail MailName
     Бродкаст: php artisan make:broadcast BroadcastName
 
-php artisan make:model Customer --migration --factory --seed
-
-php artisan make:component \_\_ --view
-Це створить компонент з шаблоном, готовим для використання.
-Якщо вам потрібна додаткова допомога, дайте знати!
+    php artisan make:model Customer --migration --factory --seed
+    
+    php artisan make:component \_\_ --view
+    Це створить компонент з шаблоном, готовим для використання.
+    Якщо вам потрібна додаткова допомога, дайте знати!
 
 ### створити в папці компонент
 
-php artisan make:component Menu/About --view
-визвати <x-menu.about>
-php artisan make:view view-name
+    php artisan make:component Menu/About --view
+    визвати <x-menu.about>
+    php artisan make:view view-name
 
 ### сторінки
 

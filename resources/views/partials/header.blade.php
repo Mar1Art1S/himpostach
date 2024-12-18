@@ -67,7 +67,8 @@
         </div>
     </nav>
 
-    <div class="w-full bg-amber-400">
+    <div class="w-full bg-amber-400 ">
+
         <div class="flex flex-row items-center justify-between h-16 mx-5 sf:mx-2">
             <div class="flex items-center justify-end text-white">
                 <div class="text-base leading-normal text-right font-r400 sf:hidden">
@@ -83,14 +84,52 @@
                     </x-slot>
                     <livewire:order/>
                 </x-modal>
-
             </div>
 
-            <ul>
-                <li class="">
-                    <a class="text-xl text-white font-r300" href="#">{{ __('other.other_leng') }}</a>
-                </li>
-            </ul>
+            <div x-data="{ open: false }" class="relative inline-block text-left">
+                <!-- Кнопка для відкриття меню -->
+                <button
+                        @click="open = !open"
+                        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                    {{__('lang.lang')}}
+
+                    <svg
+                            class="w-5 h-5 ml-2 -mr-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                    >
+                        <path fill-rule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.42l3.71-4.19a.75.75 0 011.08 1.04l-4.25 4.75a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <!-- Меню -->
+                <div
+                        x-show="open"
+                        @click.outside="open = false"
+                        x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="opacity-0 scale-95"
+                        x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-95"
+                        class="absolute right-0 z-[1000000] w-56 mt-2 origin-top-right bg-white border border-gray-300 divide-y divide-gray-100 rounded-md shadow-lg focus:outline-none"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="menu-button"
+                        tabindex="-1"
+                >
+                    <div class="py-1" role="none">
+                        <a href="{{ route('set-language', 'en') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                           role="menuitem" tabindex="-1" id="menu-item-0">ENG</a>
+                        <a href="{{ route('set-language', 'uk') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                           role="menuitem" tabindex="-1" id="menu-item-1">UA</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>

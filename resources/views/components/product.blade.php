@@ -3,10 +3,11 @@
 <x-decor.flip>
     <div
         class=" xs:hidden front w-[400px] h-[400px] lf:w-[370px] lf:h-[370px] tg:w-[350px] tg:h-[350px] fg:w-[320px] fg:h-[320px] md:w-[370px] md:h-[370px]">
-        <h2 class=" p-3 mb-5 text-2xl text-center text-white uppercase font-r700 lf:text-1.5xl lf:mb-1 lf:p-1"> {{
-            $product->name }} </h2>
+        <h2 class=" p-3 mb-5 text-2xl text-center text-white uppercase font-r700 lf:text-1.5xl lf:mb-1 lf:p-1">
+            {{ $product->getTranslation('name', app()->getLocale()) }}
+        </h2>
         <div>
-            @foreach ($product->options as $options)
+            @foreach ($product->getTranslation('options', app()->getLocale()) as $options)
             <div class="flex flex-row items-center w-full px-4 mt-4 lf:mt-2">
                 <div class="justify-start w-3/4 text-sm text-white text-start lf:leading-[15px] lf:w-2/3">{{
                     $options['name'] }}</div>
@@ -19,17 +20,17 @@
     </div>
     <div class="back xs:hidden">
         <h4 class="mt-3 text-2xl font-semibold leading-10 text-center text-white uppercase">
-            {{ $product->name }}
+            {{ $product->getTranslation('name', app()->getLocale()) }}
         </h4>
         <div class="flex flex-col items-center justify-center mt-5 space-y-3">
-            <x-modal title="Замовлення товару" :product="$product">
+            <x-modal title="{{__('product.prod_commodity')}}" :product="$product">
                 <x-slot:button>
                     <x-button @click="modalOpen=true" class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('other.other_buy') }}</x-button>
                     </x-slot>
                     <livewire:order product="{{ $product['name'] }}" />
 
             </x-modal>
-            @if($product->tds_content)
+            @if($product->tds_content[app()->getLocale()] ?? '')
             <div x-data="{ modalOpen: false }" @keydown.escape.window="modalOpen = false"
                 class="relative z-50 w-auto h-auto">
                 <button @click="modalOpen=true"
@@ -63,7 +64,7 @@
                             </div>
                             <div class="relative w-auto">
                                 <div class="">
-                                    {!! $product->tds_content !!}
+                                    {!! $product->tds_content[app()->getLocale()] ?? '' !!}
                                 </div>
                             </div>
                         </div>
@@ -71,7 +72,8 @@
                 </template>
             </div>
             @endif
-            @if($product->tehcarta_content)
+            @if($product->tehcarta_content[app()->getLocale()] ?? '')
+
             <div x-data="{ modalOpen: false }" @keydown.escape.window="modalOpen = false"
                 class="relative z-50 w-auto h-auto">
 
@@ -106,7 +108,7 @@
                         </div>
                         <div class="relative w-auto">
                             <div class="">
-                                {!! $product->tehcarta_content !!}
+                                {!! $product->tehcarta_content[app()->getLocale()] ?? '' !!}
                             </div>
                         </div>
                     </div>
@@ -121,10 +123,10 @@
 <div class="hidden xs:block">
     <div class="xs:w-[350px] xs:h-auto xs:bg-slate-600">
         <h2 class="hidden xs:block xs:p-3 xs:mb-5 xs:text-xl xs:text-center xs:text-white xs:uppercase xs:font-r700">
-            {{ $product->name }}
+            {{ $product->getTranslation('name', app()->getLocale()) }}
         </h2>
         <div>
-            @foreach ($product->options as $options)
+            @foreach ($product->getTranslation('options', app()->getLocale()) as $options)
             <div class="xs:flex xs:flex-row xs:items-center xs:w-full xs:px-4 xs:mt-2">
                 <div class="w-3/4 text-sm text-white text-start lf:leading-[15px]">{{ $options['name'] }}</div>
                 <div class="w-1/4 text-sm font-bold text-white xs:text-xs text-end flex-nowrap">{{ $options['parameter']
@@ -135,14 +137,15 @@
 
 
         <div class="hidden xs:flex xs:flex-col xs:items-center xs:justify-center xs:mt-5 xs:space-y-3">
-            <x-modal title="Замовлення товару" :product="$product">
+            <x-modal title="{{__('product.prod_commodity')}}" :product="$product">
                 <x-slot:button>
                     <x-button @click="modalOpen=true" class="w-40 lf:py-2 lf:px-4 lf:w-24">{{ __('other.other_buy') }}</x-button>
                     </x-slot>
                     <livewire:order product="{{ $product['name'] }}" />
             </x-modal>
 
-            @if($product->tds_content)
+
+            @if($product->tds_content[app()->getLocale()] ?? '')
             <div x-data="{ modalOpen: false }" @keydown.escape.window="modalOpen = false"
                 class="relative z-50 w-auto h-auto">
                 <button @click="modalOpen=true"
@@ -167,7 +170,7 @@
                                 </button>
                             </div>
                             <div class="relative">
-                                <div>{!! $product->tds_content !!}</div>
+                                <div>{!! $product->tds_content[app()->getLocale()] ?? '' !!}</div>
                             </div>
                         </div>
                     </div>
@@ -175,7 +178,8 @@
             </div>
             @endif
 
-            @if($product->tehcarta_content)
+
+            @if($product->tehcarta_content[app()->getLocale()] ?? '')
             <div x-data="{ modalOpen: false }" @keydown.escape.window="modalOpen = false"
                 class="relative z-50 w-auto h-auto">
                 <button @click="modalOpen=true"
@@ -197,7 +201,7 @@
                                 </svg>
                             </button>
                             <div class="relative">
-                                <div>{!! $product->tehcarta_content !!}</div>
+                                <div>{!! $product->tehcarta_content[app()->getLocale()] ?? '' !!}</div>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ return [
     "other_technological_map"  => "Technological map",
     "other_blog"  => "Blog",
     "other_citi"  => "Kremenchuk",
-    "other_question"  => "Задайте запитання",
+    "other_question"  => "Ask a question",
     "other_leng"  => "ENG",
 
 ];
