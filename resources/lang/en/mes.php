@@ -5,7 +5,7 @@ return [
     "chemical_raw_materials"  => "Chemical raw materials", //Хімічна сировина
     "production_and_supply"  => "PRODUCTION AND SUPPLY", //ВИРОБНИЦТВО ТА ПОСТАЧАННЯ
     "welcome_company" => "Welcome to the company", //Ласкаво просимо у компанію
-    "main_company" => "Himpostavshchik!", //Хімпостачальник
+    "main_company" => "Khimpostavshchik!", //Хімпостачальник
     "high_tech_chemicals" => "We have been manufacturing and supplying high-tech chemicals for over 25 years.", //Ми понад 25 років займаємось виробництвом та постачанням високотехнологічних хімічних речовин.
     "find_solution" => "We will find the right solution for you.", //Знайдемо для Вас відповідне рішення.
     'leave_order' => 'Leave a request and we will contact you.', //Залиште замовлення і ми зв’яжемося з Вами.
