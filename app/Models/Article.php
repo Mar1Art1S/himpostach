@@ -7,11 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use RalphJSmit\Laravel\SEO\Support\HasSEO;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
-use Spatie\Translatable\HasTranslations;
 
 class Article extends Model
 {
-  use HasFactory, HasSEO, HasTranslations;
+  use HasFactory, HasSEO;
 
 
   public function getDynamicSEOData(): SEOData
@@ -26,12 +25,6 @@ class Article extends Model
     );
   }
 
-  public array $translatable = [
-    'title',
-    'slug',
-    'preview_text',
-    'detail_text',
-  ];
   protected $fillable = [
     'title',
     'slug',
@@ -47,20 +40,14 @@ class Article extends Model
   protected $casts = [
     'tags' => 'json',
     'published_at' => 'datetime',
-    'active' => 'boolean',
-    'title' => 'array',
-    'slug' => 'array',
-    'preview_text'=> 'array',
-    'detail_text'=> 'array',
+    'active' => 'boolean'
   ];
 
-  public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-  {
+  public function category() {
     return $this->belongsTo(ArticleCategory::class);
   }
 
-  public function getFormattedPublishedAtAttribute(): string
-  {
+  public function getFormattedPublishedAtAttribute(){
     return Carbon::parse($this->published_at)->translatedFormat('j F Y');
   }
 
