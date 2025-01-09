@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="YI1qHQLqb3Zb5gUi9zIJLM3tP2jW81Vu7pd_0GzUbOs" />
+
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -18,6 +19,7 @@
     {!! seo($article ?? null) !!}
 
     @vite(['resources/css/app.css', 'resources/js/calc.js', 'resources/js/app.js'])
+    <link rel="canonical" href="{{ url()->current() }}">
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WSPMVQ2DB"></script>
 <script>
