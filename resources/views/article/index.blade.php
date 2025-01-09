@@ -14,9 +14,9 @@
         <x-decor.card>
 
             @foreach($articles as $article)
-            <div class="flex flex-col items-start w-[400px] h-[440px]">
+            <div class="flex flex-col items-start w-[400px] h-auto">
                 <a href="{{ route('article.show', [$article->category->slug, $article->slug]) }}" class="block">
-                    <img class="object-cover w-full justify-center mb-2 overflow-hidden shadow-sm h-[300px]"
+                    <img class="object-cover w-full justify-center mb-2 overflow-hidden shadow-sm h-[400px]"
                         src="{{ Storage::url($article->preview_image) }}" alt="">
                 </a>
                 <h2 class="text-lg font-bold sm:text-xl md:text-2xl">
@@ -41,8 +41,6 @@
 
         </div>
 
-
-        </div>
     </section>
 
 </x-section>
